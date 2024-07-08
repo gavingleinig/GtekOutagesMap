@@ -4,7 +4,7 @@ let gridPoints = [];
 
 document.addEventListener("DOMContentLoaded", async function () {
     await initMap();
-    await loadPoints();
+    await loadTowers();
 });
 
 async function initMap() {
@@ -16,33 +16,42 @@ async function initMap() {
 
 }
 
-async function loadPoints() {
+async function loadTowers() {
     const response = await fetch('/data');
     const data = await response.json();
-    gridPoints = data.towers;
+    towers = data.towers;
 }
 
-async function findNearestPoint() {
+function findNearestPoint() {
     const address = document.getElementById("address").value;
     geocoder.geocode({ address: address }, (results, status) => {
         if (status === "OK") {
             const location = results[0].geometry.location;
             map.setCenter(location);
-            map.setZoom(10);
+            map.setZoom(12);
 
-            const { nearestPoint, distance } = getNearestPoint(location);
-            document.getElementById("nearest-point").innerText = `Nearest Point: ${nearestPoint.name}, Distance: ${distance.toFixed(2)} meters`;
-            
+            const towersInRange = getTowersInRange(location);
+            const offlineTowers = towersInRange.filter(tower => tower.status == "Offline");
+
+            if (offlineTowers.length > 0) {
+                const nearestOfflineTower = findNearestTower(location, offlineTowers);
+                document.getElementById("nearest-point").innerText = `Nearest Offline Tower: ${nearestOfflineTower.name}, Distance: ${nearestOfflineTower.distance.toFixed(2)} meters`;
+            } else {
+                document.getElementById("nearest-point").innerText = "All systems are good to go.";
+            }
+
             new google.maps.Marker({
                 map: map,
                 position: location,
                 title: 'Given Address'
             });
 
-            new google.maps.Marker({
-                map: map,
-                position: { lat: nearestPoint.lat, lng: nearestPoint.lng },
-                title: nearestPoint.name
+            towersInRange.forEach(tower => {
+                new google.maps.Marker({
+                    map: map,
+                    position: { lat: tower.latitude, lng: tower.longitude },
+                    title: tower.name
+                });
             });
 
         } else {
@@ -51,20 +60,26 @@ async function findNearestPoint() {
     });
 }
 
-function getNearestPoint(location) {
-    let nearestPoint = null;
+function getTowersInRange(location) {
+    return towers.filter(tower => {
+        const towerLocation = new google.maps.LatLng(tower.latitude, tower.longitude);
+        const distance = google.maps.geometry.spherical.computeDistanceBetween(location, towerLocation);
+        return distance <= tower.radius*1609.34; //1609.34 meters in a mile
+    });
+}
+
+function findNearestTower(location, towers) {
+    let nearestTower = null;
     let minDistance = Number.MAX_VALUE;
-    let distance = 0;
-    
-    gridPoints.forEach(point => {
-        const pointLocation = new google.maps.LatLng(point.latitude, point.longitude);
-        const currentDistance = google.maps.geometry.spherical.computeDistanceBetween(location, pointLocation);
+
+    towers.forEach(tower => {
+        const towerLocation = new google.maps.LatLng(tower.latitude, tower.longitude);
+        const currentDistance = google.maps.geometry.spherical.computeDistanceBetween(location, towerLocation);
         if (currentDistance < minDistance) {
             minDistance = currentDistance;
-            nearestPoint = point;
-            distance = currentDistance;
+            nearestTower = tower;
         }
     });
 
-    return { nearestPoint, distance };
+    return { name: nearestTower.name, distance: minDistance };
 }
