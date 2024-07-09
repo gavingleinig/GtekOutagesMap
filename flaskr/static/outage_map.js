@@ -1,6 +1,7 @@
 let map;
 let geocoder;
 let gridPoints = [];
+let marker;
 
 document.addEventListener("DOMContentLoaded", async function () {
     await initMap();
@@ -10,7 +11,15 @@ document.addEventListener("DOMContentLoaded", async function () {
 async function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
         zoom: 9,
-        center: { lat: 28.090881958, lng:  -97.68847870 } // Center of the US
+        center: { lat: 28.090881958, lng:  -97.68847870 }, // Center of Gtek Service Area
+        fullscreenControl: false,
+        disableDefaultUI: true,
+        zoomControl: true,
+        mapTypeControl: false,
+        scaleControl: true,
+        streetViewControl: false,
+        rotateControl: false,
+        mapTypeId: 'terrain'
     });
     geocoder = new google.maps.Geocoder();
 
@@ -22,64 +31,70 @@ async function loadTowers() {
     towers = data.towers;
 }
 
-function findNearestPoint() {
+async function findIfOutage() {
     const address = document.getElementById("address").value;
-    geocoder.geocode({ address: address }, (results, status) => {
-        if (status === "OK") {
-            const location = results[0].geometry.location;
-            map.setCenter(location);
-            map.setZoom(12);
+    const nearestPointElement = document.getElementById("nearest-point");
 
-            const towersInRange = getTowersInRange(location);
-            const offlineTowers = towersInRange.filter(tower => tower.status == "Offline");
+    // Function to get latitude and longitude of an address using Google Maps Geocoding API
+    const geocodeAddress = async (address) => {
+        const geocoder = new google.maps.Geocoder();
+        return new Promise((resolve, reject) => {
+            geocoder.geocode({ address: address }, (results, status) => {
+                if (status === 'OK') {
+                    resolve(results[0].geometry.location);
+                } else {
+                    reject(`Geocode was not successful for the following reason: ${status}`);
+                }
+            });
+        });
+    };
 
-            if (offlineTowers.length > 0) {
-                const nearestOfflineTower = findNearestTower(location, offlineTowers);
-                document.getElementById("nearest-point").innerText = `Nearest Offline Tower: ${nearestOfflineTower.name}, Distance: ${nearestOfflineTower.distance.toFixed(2)} meters`;
-            } else {
-                document.getElementById("nearest-point").innerText = "All systems are good to go.";
+    try {
+        const addressLocation = await geocodeAddress(address);
+        const addressLatLng = new google.maps.LatLng(addressLocation.lat(), addressLocation.lng());
+
+        // Center and zoom the map on the given address
+        map.setCenter(addressLatLng);
+        map.setZoom(12);
+
+        if (marker) {
+            marker.setMap(null);
+        }
+
+        marker = new google.maps.Marker({
+            position: addressLatLng,
+            map: map,
+            title: 'Address Location'
+        });
+
+        let anOfflineTower = null;
+
+        towers.forEach(tower => {
+            if (tower.status == 'Offline') {
+                const towerLatLng = new google.maps.LatLng(tower.latitude, tower.longitude);
+                const distanceToTower = google.maps.geometry.spherical.computeDistanceBetween(addressLatLng, towerLatLng);
+
+                if (distanceToTower <= 16093.4) { // 10 miles in meters
+                    if (distanceToTower <= tower.radius*1609.34) {
+                        
+                            anOfflineTower = {
+                                name: tower.name,
+                                distance: distanceToTower
+                            };
+                        
+                    }
+                }
             }
+        });
 
-            new google.maps.Marker({
-                map: map,
-                position: location,
-                title: 'Given Address'
-            });
-
-            towersInRange.forEach(tower => {
-                new google.maps.Marker({
-                    map: map,
-                    position: { lat: tower.latitude, lng: tower.longitude },
-                    title: tower.name
-                });
-            });
-
+        if (anOfflineTower) {
+            nearestPointElement.innerText = `An Offline Tower is in Radius: ${anOfflineTower.name}, Distance: ${(anOfflineTower.distance/1609.34).toFixed(2)} miles`;
         } else {
-            alert("Geocode was not successful for the following reason: " + status);
+            nearestPointElement.innerText = "All systems are good to go.";
         }
-    });
-}
 
-function getTowersInRange(location) {
-    return towers.filter(tower => {
-        const towerLocation = new google.maps.LatLng(tower.latitude, tower.longitude);
-        const distance = google.maps.geometry.spherical.computeDistanceBetween(location, towerLocation);
-        return distance <= tower.radius*1609.34; //1609.34 meters in a mile
-    });
-}
-
-function findNearestTower(location, towers) {
-    let nearestTower = null;
-    let minDistance = Number.MAX_VALUE;
-
-    towers.forEach(tower => {
-        const towerLocation = new google.maps.LatLng(tower.latitude, tower.longitude);
-        const currentDistance = google.maps.geometry.spherical.computeDistanceBetween(location, towerLocation);
-        if (currentDistance < minDistance) {
-            minDistance = currentDistance;
-            nearestTower = tower;
-        }
-    });
-
-    return { name: nearestTower.name, distance: minDistance };
+    } catch (error) {
+        console.error(error);
+        nearestPointElement.innerText = "Error determining outage status.";
+    }
 }

@@ -1,0 +1,3391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Towers and Freq 6.25.24.kmz</name>
+	
+	<Folder>
+		<name>Towers and Freq 6.25.24</name>
+		<Placemark>
+			<name>Agua Dulce CC .191</name>
+			<description>Tarana 5GHz BN N     plan id 5.2.0
+Tarana 5GHz BN E     plan id 5.2.1    
+Tarana 5GHz BN S     plan id 5.2.2
+Tarana 5GHz BN W    plan id 5.2.3</description>
+			<LookAt>
+				<longitude>-97.90006406382561</longitude>
+				<latitude>27.78869298392922</latitude>
+				<altitude>0</altitude>
+				<heading>-0.2944936936419471</heading>
+				<tilt>0</tilt>
+				<range>250.223867318834</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-stars3</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.90029014813797,27.78904295284456,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Agua Dulce GE .180</name>
+			<description>PMP450i 5GHz SW CC 179 (5735)
+PMP450m 365 AP1 N - CC 180 x 40MHz
+PMP450m 5GHz AP2 E - CC 181 (5.1 band)
+PMP450m 365 AP3 S - CC 182 x 40MHz
+PMP450m 365 AP4 W - CC 183 x 40MHz
+
+
+AES - 3617771400
+10 mile max</description>
+			<LookAt>
+				<longitude>-97.91508602008949</longitude>
+				<latitude>27.77991908855876</latitude>
+				<altitude>0</altitude>
+				<heading>-1.336946160353189e-11</heading>
+				<tilt>0</tilt>
+				<range>192.0351865778555</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars411</styleUrl>
+			<Point>
+				<coordinates>-97.91529759082242,27.78006011014668,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Agua Dulce Tower .204</name>
+			<description>15.2.1 fw and AES 3617771400
+
+PMP450i 5GHz AP1 N - CC 83
+PMP450i 5GHz AP2 NE - CC 84
+PMP450 5GHz AP3 SE - CC 85
+PMP450 5GHz AP4 S - CC 86
+PMP450i 5GHz AP5 SW - CC 87
+PMP450i 5GHz AP6 NW - CC 88
+
+10 mile max range</description>
+			<Camera>
+				<longitude>-97.92152147463661</longitude>
+				<latitude>27.77724198623467</latitude>
+				<altitude>38.37553754961294</altitude>
+				<heading>-19.18107031267599</heading>
+				<tilt>0.1539255628545811</tilt>
+				<roll>-18.69065305655394</roll>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</Camera>
+			<styleUrl>#msn_blu-stars0400041</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.92152400000001,27.777244,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Alfred Tower .30</name>
+			<description>PMP450m 5GHz AP1 N - CC 30 - 40MHz
+PMP450m 5GHz AP2 E - CC 31
+PMP450m 5GHz AP3 S - CC 32 - 40MHz
+PMP450m 5GHz AP4 W - CC 33
+
+3617771400 AES
+10 mile max</description>
+			<LookAt>
+				<longitude>-98.0074005523541</longitude>
+				<latitude>27.8619446660633</latitude>
+				<altitude>0</altitude>
+				<heading>-0.07314960219778918</heading>
+				<tilt>0</tilt>
+				<range>144.1105188841337</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars5</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.00774085600855,27.86181575106974,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Alice Fire Department Tower .176</name>
+			<description>ePMP 3000
+1944
+
+10 mile max range</description>
+			<LookAt>
+				<longitude>-98.07066154794585</longitude>
+				<latitude>27.75333459402591</latitude>
+				<altitude>0</altitude>
+				<heading>-1.61504080621384</heading>
+				<tilt>0</tilt>
+				<range>59.33525688011159</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars401</styleUrl>
+			<Point>
+				<coordinates>-98.0707372186834,27.75337764279547,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Alice GE .172</name>
+			<description>PMP450m AP1 N - CC 172 (10 mile max)
+PMP450m AP2 E - CC 173 (10 mile max)
+PMP450m AP3 S - CC 174 (6 mile max)
+PMP450m AP4 W - CC 175 (6 mile max)
+PMP450m WII - CC 177
+
+AES 3617771400</description>
+			<LookAt>
+				<longitude>-98.07582403075915</longitude>
+				<latitude>27.7158742672478</latitude>
+				<altitude>0</altitude>
+				<heading>-0.1153860875287976</heading>
+				<tilt>0</tilt>
+				<range>172.0299252922183</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars31</styleUrl>
+			<Point>
+				<coordinates>-98.07641286029676,27.7158582147608,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Alice Water Tower - North .32</name>
+			<description>Tarana 5GHz BN N -  Plan ID 4.3.0
+
+
+Tarana - 5G - 15Km 
+
+PMP450m 3.65 AP1 N - CC 32 
+PMP450m 5GHz AP1 N - CC 30
+PMP450m 5GHz AP NII - CC 29
+PMP450m 5GHz AP 2 E - CC 33 
+PMP450m 5GHz AP 4 W - CC 35 
+
+10mile, AES / 3617771400</description>
+			<LookAt>
+				<longitude>-98.07182542418587</longitude>
+				<latitude>27.76308561807073</latitude>
+				<altitude>0</altitude>
+				<heading>-0.2627224729129142</heading>
+				<tilt>0</tilt>
+				<range>154.5939923569707</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-stars3</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.07203531420988,27.76326408760814,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Aransas Pass AT .102</name>
+			<description>PMP450m 5GHz AP1 N - CC 202  (6 mile max)
+PMP450m 5GHz AP2 E - CC 203  (6 mile max)
+PMP450m 5GHz AP3 S - CC 204  5885 (6 mile max) 
+PMP450m 5GHz AP4 W - CC 205  5790 (10 mile max)
+
+All 40MHz
+
+AES / 3617771400</description>
+			<LookAt>
+				<longitude>-97.16261758136127</longitude>
+				<latitude>27.92493438206353</latitude>
+				<altitude>0</altitude>
+				<heading>-2.407471770293079</heading>
+				<tilt>0</tilt>
+				<range>215.1280567046327</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars12</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.16301154052513,27.92496593428627,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Aransas Pass Water Tower .86</name>
+			<description>Tarana 5GHz BN N -  Plan Id 2.20.0
+Tarana 5GHz BN S -   Plan Id 2.20.2
+Tarana 5GHz BN W -   Plan Id 2.20.3
+
+Tarana - 5G - 15Km  (9.3 miles)</description>
+			<LookAt>
+				<longitude>-97.14379606560638</longitude>
+				<latitude>27.90199250089459</latitude>
+				<altitude>0</altitude>
+				<heading>0.0001145741008404504</heading>
+				<tilt>0</tilt>
+				<range>318.2822669677887</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-stars3</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.14383417281059,27.90211141917406,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Aransas Ranch Micropop .99</name>
+			<description>PMP450i 5GHz Omni - CC 99
+PMP450i 5GHz NE - CC 100</description>
+			<LookAt>
+				<longitude>-97.08689545504159</longitude>
+				<latitude>28.00258073384287</latitude>
+				<altitude>0</altitude>
+				<heading>5.79656090696726e-12</heading>
+				<tilt>0</tilt>
+				<range>57.24532650391782</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars1</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.08704780426825,28.00251099321184,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Banquete GE .184</name>
+			<description>PMP450i SW CC-182 5800 (4 mile max range)
+PMP450i NW CC-183 5775 (4 mile max range)
+PMP450m AP1 N CC-184 5820
+PMP450m AP2 E CC-185 5755
+PMP450m AP3 S CC-186 5840 UNII-4, 20MHz
+PMP450m AP4 W CC-187 5755
+
+10 mile max range
+
+
+AES / 3617771400</description>
+			<LookAt>
+				<longitude>-97.78739424458136</longitude>
+				<latitude>27.80257625121609</latitude>
+				<altitude>0</altitude>
+				<heading>-14.55257660750544</heading>
+				<tilt>0</tilt>
+				<range>150.1489054841294</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars1000</styleUrl>
+			<Point>
+				<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+				<coordinates>-97.78737864529194,27.80264862945554,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Bartosch Tower .6</name>
+			<description>PMP450m 5GHz AP1 N - CC6
+PMP450m 5GHz AP2 E - CC7
+PMP450m 5GHz AP3 S - CC8
+PMP450m 5GHz AP4 W - CC9
+
+5 mile max range</description>
+			<LookAt>
+				<longitude>-97.88679150210986</longitude>
+				<latitude>27.93605961772557</latitude>
+				<altitude>0</altitude>
+				<heading>-0.01657054440441017</heading>
+				<tilt>0</tilt>
+				<range>98.07984782520677</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars02</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.88703283744911,27.93612247105491,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Bayside Richardson Gin .42</name>
+			<description>PMP450i 5GHz AP1 N CC41
+PMP450i 5GHz AP2 E CC 40
+PMP450i 5GHz AP3 S CC43
+PMP450i 5GHz AP4 W CC42
+PMP450i 365 AP1 N CC42
+PMP450i 365 AP2 E CC 43
+PMP450i 365 AP3 S CC44
+PMP450i 365 AP4 W CC45
+
+(3617771400) AES
+
+SIX MILE MAX RANGE</description>
+			<LookAt>
+				<longitude>-97.23952423135904</longitude>
+				<latitude>28.14316356575982</latitude>
+				<altitude>0</altitude>
+				<heading>0.2558520314595301</heading>
+				<tilt>0</tilt>
+				<range>186.1727381923824</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars401</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.23955197062104,28.14345631157628,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Beach Place Rooftop .148</name>
+			<description>PMP450m 5GHz  NW - CC 95
+PMP450m 365  N - CC 95
+
+AES 3617771400
+10 mile max range</description>
+			<LookAt>
+				<longitude>-97.38017690905386</longitude>
+				<latitude>27.83090621569286</latitude>
+				<altitude>0</altitude>
+				<heading>0.1748737540244741</heading>
+				<tilt>0</tilt>
+				<range>398.6774153452833</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars0011</styleUrl>
+			<Point>ro
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.38087604873418,27.83082788817205,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Bee Dev Auth Tower .78</name>
+			<description>PMP450i 5GHz Omni - CC 78
+5.1 Band
+AES 3617771400</description>
+			<LookAt>
+				<longitude>-97.66163597425557</longitude>
+				<latitude>28.36970650686146</latitude>
+				<altitude>0</altitude>
+				<heading>0.0882638786650875</heading>
+				<tilt>0</tilt>
+				<range>167.4783221897478</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars02</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.66182273351458,28.36958172920707,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BeeGEO ATC .158</name>
+			<description>PMP450m 365 AP1 N CC 158
+PMP450m 365 AP2 E CC 159
+PMP450m 365 AP3 S CC 160
+PMP450m 365 AP4 W CC 161
+
+10 Mile Max Range 
+3617771400 AES</description>
+			<LookAt>
+				<longitude>-97.8589912953597</longitude>
+				<latitude>28.34289787233648</latitude>
+				<altitude>0</altitude>
+				<heading>0.0001071527684375732</heading>
+				<tilt>0</tilt>
+				<range>97.56653251503676</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars02</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.85923052074146,28.3428801655588,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Beeville GE .72</name>
+			<description>Tarana 5GHz BN N -  Plan Id 5.10.0
+
+Tarana - 5G - 15Km  (9.3 miles)
+
+PMP450m 5GHz N - CC 72 - 40MHz
+PMP450i 5GHz E - CC 73 
+PMP450m 5GHz S - CC 74
+PMP450i 5GHz W - CC 75
+
+PMP450m 3.65GHz N - CC 76 - 40MHz
+PMP450 3.65GHz E - CC 77 - 40MHz
+PMP450m 3.65GHz S - CC 78 - 40MHz
+PMP450 3.65GHz W - CC 79 - 40MHz
+
+AES 3617771400
+
+10 mile max range</description>
+			<LookAt>
+				<gx:TimeStamp><when>2008-10-31</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-97.74237879205995</longitude>
+				<latitude>28.38577266572231</latitude>
+				<altitude>0</altitude>
+				<heading>0.01515310421422758</heading>
+				<tilt>0</tilt>
+				<range>154.18884710655</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-stars3</styleUrl>
+			<Point>
+				<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+				<coordinates>-97.74229518562287,28.38582071252786,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Ben Bolt Tower .168</name>
+			<description>Tarana 5GHz BN N - Plan Id 0.11.0
+
+Tarana - 5G - 15Km (9.3 miles)
+
+PMP450m 3.65 AP1 N - CC 168 - 40MHz
+PMP450m 3.65 AP2 E - CC 169 - 40MHz
+PMP450m 3.65 AP3 S - CC 170 - 40MHz
+PMP450m 3.65 AP4 W - CC 171 - 40MHz
+
+8 mile max range
+3617771400 AES
+
+
+ePMP 360
+1944
+
+10 mile max range</description>
+			<LookAt>
+				<longitude>-98.08783173952106</longitude>
+				<latitude>27.64363899550381</latitude>
+				<altitude>0</altitude>
+				<heading>-0.1627603508769079</heading>
+				<tilt>0</tilt>
+				<range>169.4052835904797</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-stars3</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.08810823224219,27.64351063405015,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Benavides Tower .88</name>
+			<description>PMP450i 5GHz AP1 N - CC 88
+PMP450m 5GHz AP2 E - CC 89
+PMP450i 5GHz AP3 S - CC 90
+PMP450i 5GHz AP4 W - CC 91
+AES / 3617771400
+
+
+
+10 mile max range</description>
+			<styleUrl>#msn_blu-stars12</styleUrl>
+			<Point>
+				<coordinates>-98.43190833333335,27.59101944444445,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Berclair ATC .170</name>
+			<description>PMP450i 5GHz AP1 N - CC 170
+PMP450i 5GHz AP2 E - CC 171 (40MHz)
+PMP450i 5GHz AP3 S - CC 172
+PMP450i 5GHz AP4 W - CC 173 (40MHz)
+
+3617771400 / AES
+10 mile max</description>
+			<LookAt>
+				<longitude>-97.58510469752483</longitude>
+				<latitude>28.5325122489452</latitude>
+				<altitude>0</altitude>
+				<heading>-0.1253542758747351</heading>
+				<tilt>0</tilt>
+				<range>91.55500352842205</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars02</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.58504823052121,28.53241567063856,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Bishop GE .200</name>
+			<description>Tarana 5GHz BN N - Plan Id 0.1.0
+Tarana 5GHz BN E - Plan Id 0.1.1
+Tarana 5GHz BN S - Plan Id 0.1.2
+Tarana 5GHz BN W - Plan Id 0.1.3
+
+Tarana - 5G - 15Km (9.3 miles)
+
+Cambium PMP450i 5GHz
+
+AP1 North - CC 200 
+AP2 East - CC 201
+AP3 South - CC 202
+AP4 West - CC 203 - UNII-4, on 40MHz
+AP NW - CC 204
+
+(3617771400) AES
+
+10 mile max range</description>
+			<LookAt>
+				<longitude>-97.79854683879697</longitude>
+				<latitude>27.58748747013476</latitude>
+				<altitude>0</altitude>
+				<heading>-0.2397748050201299</heading>
+				<tilt>0</tilt>
+				<range>1364.558430664549</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-stars3</styleUrl>
+			<Point>
+				<coordinates>-97.7992784692821,27.58739451896116,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Blanconia Tower .182</name>
+			<description>PMP450m 365 AP1 N CC-182 3690
+PMP450m 365 AP2 E CC-183 3660
+PMP450m 365 AP3 S CC-184 3690
+PMP450m 365 AP4 N CC-185 3660
+
+PMP450m 5GHz East - CC 183 40MHz
+
+10 mile max range
+
+3617771400 AES</description>
+			<LookAt>
+				<longitude>-97.42657999999005</longitude>
+				<latitude>28.38303899999671</latitude>
+				<altitude>0</altitude>
+				<heading>-1.577583551677719</heading>
+				<tilt>22.79690845249026</tilt>
+				<range>127.3952340465153</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars411</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.42677747738865,28.38304171438015,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Bluntzer Tower .188</name>
+			<description>Tarana 5GHz BN N - Plan Id 3.18.0
+Tarana 5GHz BN S - Plan Id 3.18.1  
+Tarana 5GHza BN W - Plan Id 3.18.2
+
+Tarana - 5G - 15Km  (9.3 miles)
+
+PMP450m 5GHz AP1 North - CC188 x 40MHz
+PMP450m 5GHz AP2 East - CC 189
+PMP450m 5GHz AP3 South - CC 190
+PMP450m 5GHz AP4 West - CC 191
+
+PMP450i 5GHz AP NW - CC 82 x 30MHz
+
+PMP450m 3.65 North - CC 188
+PMP450m 3.65 East - CC 189
+PMP450m 3.65 South - CC 190
+PMP450m 3.65 West - CC 191
+
+3617771400 / AES
+
+10 mile max range</description>
+			<LookAt>
+				<gx:TimeStamp><when>2008-10-31</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-97.78327638029252</longitude>
+				<latitude>27.89827803736155</latitude>
+				<altitude>0</altitude>
+				<heading>-1.723202218269902</heading>
+				<tilt>0</tilt>
+				<range>159.729798343167</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-stars3</styleUrl>
+			<Point>
+				<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+				<coordinates>-97.78349804589305,27.89824278565233,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Bonnie View Tower .123</name>
+			<description>PMP450i 5GHz Omni (5.1 band) 40MHz 
+CC 123 
+5 mile max
+3617771400 AES</description>
+			<LookAt>
+				<longitude>-97.30978341219159</longitude>
+				<latitude>28.16966902637044</latitude>
+				<altitude>0</altitude>
+				<heading>0.2516971575915931</heading>
+				<tilt>0</tilt>
+				<range>76.55728239960105</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars02</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.30984891002038,28.16967662834275,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Broken Arrow Pole .28</name>
+			<description>PMP450i 5GHz Omni CC 28 3 mile max range
+PMP450m 5GHz East CC 29 3 mile max range
+PMP450m 5GHz South CC 30 3 mile max range
+
+(3617771400) AES</description>
+			<LookAt>
+				<longitude>-97.79794519939887</longitude>
+				<latitude>27.85385667159057</latitude>
+				<altitude>0</altitude>
+				<heading>4.111685640323541e-06</heading>
+				<tilt>0</tilt>
+				<range>111.545584823522</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars31</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.797954,27.853869,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Calallen AT .130</name>
+			<description>PMP450m 5GHz 
+
+AP1 N - CC 130 (5875) UNII-4, on 40MHz
+AP2 E - CC 131 (5770) (40MHz)
+AP3 S - CC 132 (5875) UNII-4, on 40MHz
+AP4 W - CC 133 (5770) (40MHz)
+
+6 mile max range
+(3617771400) AES</description>
+			<LookAt>
+				<longitude>-97.67644336103625</longitude>
+				<latitude>27.85691686865918</latitude>
+				<altitude>0</altitude>
+				<heading>1.712012991650933e-05</heading>
+				<tilt>0</tilt>
+				<range>184.255929611925</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars022010000</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.67649430137344,27.8569004361646,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Camp Karankawa Tower .37</name>
+			<description>PMP450 5GHz Omni - CC 37 (4 mile max)
+PMP450 5GHz AP1 S - CC 41 (6 mile max)
+PMP450m 5GHz AP2 W - CC 40 (6 mile max)
+PMP450 5GHz AP3 NW - CC 38 (6 mile max)
+PMP450m 5GHz SW - CC 39 40MHz
+
+3617771400 / AES
+
+100ft tower</description>
+			<LookAt>
+				<longitude>-97.88295647223592</longitude>
+				<latitude>28.07019151773086</latitude>
+				<altitude>0</altitude>
+				<heading>-0.4224428478344022</heading>
+				<tilt>0</tilt>
+				<range>214.7697827495667</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars200</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.88315333648927,28.07027465582976,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Causeway Pole .136</name>
+			<description>PMP450i 5GHz Towards Portland - CC 90
+PMP450i 5GHz Towards Bay/Port - CC 91
+
+PMP450i 365 Towards Portland - CC 136
+
+(3617771400) AES
+
+10 mile max range</description>
+			<LookAt>
+				<longitude>-97.35633777390824</longitude>
+				<latitude>27.85501025313048</latitude>
+				<altitude>0</altitude>
+				<heading>0.06935110786436401</heading>
+				<tilt>0</tilt>
+				<range>76.76256894302126</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars401</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.35650893019506,27.85500110515975,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Chapman Ranch GE .56</name>
+			<description>Tarana 5GHz BN N -  Plan Id 1.11.0
+Tarana 5GHz BN E -  Plan Id 1.11.1
+
+Tarana - 5G - 15Km  (9.3 miles)
+
+
+PMP450m 5GHz AP1 North CC 90 - 40MHz
+PMP450m 5GHz AP2 East CC 91 - 40MHz
+PMP450m 5GHz AP3 South CC 92 - 40MHz
+PMP450m 5GHz AP4 West CC 93 - 40MHz
+
+PMP450m 365 AP1 North CC 56 - 40MHz
+PMP450m 365 AP2 East CC 57 - 40MHz
+PMP450m 365 AP3 South CC 58 - 40MHz
+PMP450m 365 AP4 West CC 59 - 40MHz
+
+(3617771400) AES
+
+10 mile max range</description>
+			<LookAt>
+				<longitude>-97.54408514995549</longitude>
+				<latitude>27.64734057750983</latitude>
+				<altitude>0</altitude>
+				<heading>-1.365604478218948</heading>
+				<tilt>0</tilt>
+				<range>8283.037035946647</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-stars3</styleUrl>
+			<Point>
+				<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+				<coordinates>-97.54929668511231,27.64960189159899,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Clear Channel Tower .24</name>
+			<description>UBNT 5GHz NW AES - 101
+UBNT 5GHz NE AES - 101
+UBNT 5GHz S AES - 101
+
+10 mile max range</description>
+			<LookAt>
+				<longitude>-97.4715484003239</longitude>
+				<latitude>27.7492976460155</latitude>
+				<altitude>0</altitude>
+				<heading>-0.03157975350802328</heading>
+				<tilt>0</tilt>
+				<range>88.6769850233226</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars0101001300</styleUrl>
+			<Point>
+				<coordinates>-97.47159854913997,27.74931106817449,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Coastal Palms RV Pole .101</name>
+			<description>PMP450i 5GHz AP1 N - CC201
+PMP450i 5GHz AP2 E - CC202
+PMP450i 5GHz AP3 S - CC203
+PMP450m 5GHz AP4 W - CC204
+4 mile max range
+5.1/5.8 mixed
+3617771400 (AES)</description>
+			<LookAt>
+				<longitude>-97.08378102316132</longitude>
+				<latitude>27.99650402785628</latitude>
+				<altitude>0</altitude>
+				<heading>0.3584230888820223</heading>
+				<tilt>0</tilt>
+				<range>36.05391607926277</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars02</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.08385123866906,27.99644933113064,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Concordia GE .192</name>
+			<description>PMPi 5GHz AP1 N - CC 192
+PMPm 5GHz AP2 E - CC 193 (30MHz)
+PMPm 5GHz AP S - CC 194
+PMPm 5GHz AP W - CC 195
+
+7 mile max range
+
+(3617771400) AES</description>
+			<LookAt>
+				<longitude>-97.70563444131353</longitude>
+				<latitude>27.60525832876989</latitude>
+				<altitude>0</altitude>
+				<heading>0.1082706208692987</heading>
+				<tilt>0</tilt>
+				<range>21.39646587598256</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars0000</styleUrl>
+			<Point>
+				<coordinates>-97.70564623271454,27.60526554579926,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Coronado Tower .50</name>
+			<description>5.1 Band AP
+PMP450i 5GHz Omni - CC 50 - 40MHz - 3 mile max range
+PMP450i 5GHz AP N - CC 51 -  40MHz - 4 mile max range
+3617771400 / AES</description>
+			<LookAt>
+				<longitude>-97.89527263351168</longitude>
+				<latitude>27.9142793402064</latitude>
+				<altitude>0</altitude>
+				<heading>-1.406051438391076</heading>
+				<tilt>0</tilt>
+				<range>189.0247121110482</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars1301</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.89589518545274,27.91414779835885,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Driscoll GE .40</name>
+			<description>PMP450m 5GHz AP1 N - CC 40 (5790) UNII-4, on 40MHz channel width
+PMP450m 5GHz AP2 E - CC 41 (5735)
+PMP450m 5GHz AP3 S - CC 42 (5795)
+PMP450m 5GHz AP4 W - CC 43 (5735)
+PMP450i 5GHz AP SE - CC 44 (5840)
+
+(3617771400) AES
+
+10 mile max range</description>
+			<LookAt>
+				<longitude>-97.74976720871304</longitude>
+				<latitude>27.67401538283891</latitude>
+				<altitude>0</altitude>
+				<heading>-0.003050171446628625</heading>
+				<tilt>0</tilt>
+				<range>364.2416105224986</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0010</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.7497563168378,27.67380222258713,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>East Orange Grove 5G Tower .8</name>
+			<description>PMP450m 5GHz AP1 N - CC 8
+PMP450m 5GHz AP2 E - CC 9 
+PMP450m 5GHz AP3 S - CC 10
+PMP450m 5GHz AP4 W - CC 11 
+
+6 mile max
+3617771400 AES</description>
+			<LookAt>
+				<longitude>-97.90008034978251</longitude>
+				<latitude>27.97916067859108</latitude>
+				<altitude>0</altitude>
+				<heading>-7.022203185868799e-05</heading>
+				<tilt>0</tilt>
+				<range>125.1555142910815</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars02</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.90019111733471,27.9791483012035,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>East San Diego Tower .154</name>
+			<description>Tarana 5GHz BN E - Plan Id 5.22.0
+Tarana 5GHz BN S - Plan Id 5.22.1
+Tarana 5GHz BN W - Plan Id 5.22.2
+
+PMP450m 5GHz AP1 N - CC 154
+PMP450m 5GHz AP2 E - CC 155
+PMP450m 5GHz AP3 S - CC 156
+PMP450m 5GHz AP4 W - CC 157
+
+6 mile max range</description>
+			<LookAt>
+				<longitude>-98.18899676028313</longitude>
+				<latitude>27.7313893490811</latitude>
+				<altitude>0</altitude>
+				<heading>0.0002198285657066595</heading>
+				<tilt>0</tilt>
+				<range>323.0086469339789</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-stars3</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.18943686511052,27.73106935892728,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Edroy GE .108</name>
+			<description>PMP450m 5GHz AP North - CC 108 - 7 mile max (40MHz) 5.1
+PMP450m 5GHz AP South - CC 112 - 10 mile max
+PMP450m 5GHz AP West - CC 111 - 7 mile max
+PMP450m 3.65 AP East - CC 109 - 7 mile max
+PMP450m 3.65 AP South - CC 110 - 7 mile max
+
+(3617771400) AES
+
+
+10 mile max range</description>
+			<LookAt>
+				<longitude>-97.67500457140291</longitude>
+				<latitude>27.97252294611532</latitude>
+				<altitude>0</altitude>
+				<heading>0.1255218064695185</heading>
+				<tilt>0</tilt>
+				<range>150.2969966606015</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars5</styleUrl>
+			<Point>
+				<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+				<coordinates>-97.67489692070089,27.97229124919244,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Emerald Hill Pole .150</name>
+			<description>PMP450i 5GHz Omni CC-150 5790  40.0MHz 
+PMP 450m 5GHz NW CC 151 5775  20.0 MHz
+
+5 Mile Max Range
+
+(3617771400) AES</description>
+			<LookAt>
+				<longitude>-97.85704349195606</longitude>
+				<latitude>28.10949819452837</latitude>
+				<altitude>0</altitude>
+				<heading>-0.2664831350795415</heading>
+				<tilt>0</tilt>
+				<range>128.0342829465309</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars102</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.85720211700581,28.10963555337529,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Enchanted Oaks RV Micro Pop .96</name>
+			<description>FOR ENCHANTED OAKS RV PARK CUSTOMERS ONLY
+
+PMP450i 5GHz Omni - CC 96</description>
+			<LookAt>
+				<longitude>-97.10429118510389</longitude>
+				<latitude>27.99199403658692</latitude>
+				<altitude>0</altitude>
+				<heading>0.0007715311846200679</heading>
+				<tilt>0</tilt>
+				<range>450.0225003401564</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.10470159403128,27.99209355029018,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Evelyn&apos;s RV Pole .122</name>
+			<description>PMP450i 365 Omni - 40MHz - CC 122
+4 mile max range
+3617771400 AES</description>
+			<LookAt>
+				<longitude>-97.6317439513809</longitude>
+				<latitude>27.83425486215742</latitude>
+				<altitude>0</altitude>
+				<heading>-0.05946199534394558</heading>
+				<tilt>0</tilt>
+				<range>50.9241265920496</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars1301</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.63189204361966,27.83424852960572,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Falfurrias Tower .224</name>
+			<description>Tarana 5GHz BN S  - Plan Id 1.12.0
+
+Tarana - 5G - 15Km (9.3 miles)
+
+PMP450m 5GHz
+South East - CC 225 - UNII-4, on 40MHz
+
+(3617771400) AES
+
+ePMP
+AP1 North
+AP2 North East
+AP3 South East 
+AP4 South
+AP6 West
+
+10 mile max range
+gtekwireless1944</description>
+			<LookAt>
+				<longitude>-98.12253768163636</longitude>
+				<latitude>27.28893516683543</latitude>
+				<altitude>0</altitude>
+				<heading>-0.1779063819726556</heading>
+				<tilt>0</tilt>
+				<range>192.6952663840099</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-stars3</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.12326185637596,27.28922661522613,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Fannin AT .163</name>
+			<description>PMP450m 365 AP1 N - CC163 (3690)
+PMP450m 365 AP2 E - CC164 (3660)
+PMP450m 365 AP3 S- CC165 (3690)
+PMP450m 365 AP4 W - CC166 (3660)
+
+10 mile max range
+3617771400 AES</description>
+			<LookAt>
+				<longitude>-97.22606999896489</longitude>
+				<latitude>28.70026999974317</latitude>
+				<altitude>0</altitude>
+				<heading>4.97069410268509e-10</heading>
+				<tilt>0</tilt>
+				<range>1000.000007295524</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars022011</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.22606999896487,28.70026999974317,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Fin and Feather RV Pole .138</name>
+			<description>PMP450i 5GHz AP SE  CC 138
+PMP450i 5GHz AP  W CC 139</description>
+			<Camera>
+				<longitude>-97.11246624385285</longitude>
+				<latitude>27.88790798805464</latitude>
+				<altitude>82.30734987256687</altitude>
+				<heading>0.4361332851694084</heading>
+				<tilt>31.8884864276616</tilt>
+				<roll>0.6156405484001193</roll>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</Camera>
+			<styleUrl>#m_ylw-pushpin5000</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.11260604647721,27.88849525573325,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Fishers of Men .100</name>
+			<description>PMP450i 5GHz AP1 N CC 100
+PMP450i 5GHz AP2 E CC 101
+PMP450i 5GHz AP3 S CC 102
+PMP450i 5GHz AP4 W CC 103
+
+5.1 band
+2 mille max range
+3617771400 (AES)</description>
+			<LookAt>
+				<longitude>-97.09499692964356</longitude>
+				<latitude>27.98027319210661</latitude>
+				<altitude>0</altitude>
+				<heading>0.363470369905483</heading>
+				<tilt>0</tilt>
+				<range>267.828810061626</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars02</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.09534378514721,27.97987509005262,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Flour Bluff CC .22</name>
+			<description>450m 5GHz NW - CC 25
+450m 5GHz NE - CC 22
+5GHz Tarana BN SE
+5GHz Tarana BN SW</description>
+			<LookAt>
+				<longitude>-97.28644426506609</longitude>
+				<latitude>27.65804713603772</latitude>
+				<altitude>0</altitude>
+				<heading>0.07605916576430594</heading>
+				<tilt>0</tilt>
+				<range>92.72682439398037</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin1</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.28642418794037,27.6580682348984,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Garcia Pole .79</name>
+			<description>PMP450m 5GHz AP1 N - CC 79 - 40MHz  (5.1)
+PMP450m 5GHz AP2 E - CC 80 (5.1)
+PMP450m 5GHz AP3 S - CC 81 (5.1)
+PMP450i 5GHz AP4 W - CC 82 (5.1)
+
+AES 3617771400
+5 mile max range</description>
+			<LookAt>
+				<longitude>-97.54572882774593</longitude>
+				<latitude>28.01744181394253</latitude>
+				<altitude>0</altitude>
+				<heading>0.0003962728296974163</heading>
+				<tilt>0</tilt>
+				<range>87.05064111304237</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars1301</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.545703,28.01741,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>George West Water Tower .132</name>
+			<description>Tarana 5GHz BN N - Plan Id 1.20.1
+Tarana 5GHz BN E - Plan Id 1.20.0
+Tarana 5GHz BN S - Plan Id  1.20.2
+Tarana 5GHz BN W - Plan Id  1.20.3
+
+Tarana - 5G - 15Km (9.3 miles)
+
+PMP450m 5GHz AP1 N- CC 132
+PMP450m 5GHz AP E - CC 133 (5.1 x 40MHz - 6 mile)
+PMP450m 3.65 AP2 E - CC 133
+PMP450m 3.65 AP3 S - CC 134
+PMP450m 3.65 AP4 W - CC 135
+
+(3617771400) AES
+
+10 mile max range</description>
+			<LookAt>
+				<longitude>-98.12230995788073</longitude>
+				<latitude>28.32537374046268</latitude>
+				<altitude>0</altitude>
+				<heading>-2.555467740376155</heading>
+				<tilt>0</tilt>
+				<range>207.9992453964013</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-stars3</styleUrl>
+			<Point>
+				<coordinates>-98.12244929318598,28.3252704237209,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Goliad Tower .162</name>
+			<description>PMP450m AP1 N - CC 162
+PMP450i AP2 E - CC 163 - 40MHz
+PMP450m AP3 S - CC 164
+PMP450i AP4 W - CC 165 - 40MHz
+
+PMP450i 365 N - CC 162
+PMP450i 365 S - CC 164
+
+10 mile max range
+
+(3617771400) AES</description>
+			<LookAt>
+				<longitude>-97.38435950970725</longitude>
+				<latitude>28.68305144351655</latitude>
+				<altitude>0</altitude>
+				<heading>1.676740179569912e-05</heading>
+				<tilt>0</tilt>
+				<range>127.4751177270217</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars21</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.38438452833974,28.68299361758269,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Grande Pole .142</name>
+			<description>**Freq is 5.1 band**
+PMP450i 5GHz AP1 N- CC 242
+PMP450i 5GHz AP2 E- CC 243
+PMP450i 5GHz AP3 S- CC 244
+PMP450i 5GHz AP4 W- CC 245 
+
+AES- 3617771400
+4 miles max range</description>
+			<LookAt>
+				<longitude>-97.06912298655519</longitude>
+				<latitude>28.02448072364416</latitude>
+				<altitude>0</altitude>
+				<heading>0.3653168622810901</heading>
+				<tilt>0</tilt>
+				<range>82.33436617920522</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars02</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.06909651879778,28.02455923671122,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Gregory Water Tower .60</name>
+			<description>PMP450 5792 AP1 N CC 50 
+PMP450 5792 AP2 E CC 51
+PMP450 5792 AP3 S CC 52
+PMP450m 5792 AP4 W CC 53
+
+PMP450 3692 AP1 N CC 75
+
+PMP450 3692 AP3 S CC 76
+
+3617771400 / AES
+
+10 mile max range</description>
+			<LookAt>
+				<longitude>-97.29123375163864</longitude>
+				<latitude>27.91893423599823</latitude>
+				<altitude>0</altitude>
+				<heading>-11.80088076841868</heading>
+				<tilt>0</tilt>
+				<range>467.2897870068443</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars022001</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.29182710327979,27.918577265798,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Halletsville Tower .160.0</name>
+			<description>PMP450i 5GHz AP1 N CC 160
+PMP450i 5GHz AP2 E CC 161 x 40MHz
+PMP450i 5GHz AP3 S CC 162
+PMP450i 5GHz AP4 W CC 163 x 40MHz
+
+(3617771400) AES
+
+10 mile max range
+
+ 29.464844° -96.952209°</description>
+			<LookAt>
+				<longitude>-96.95228662149812</longitude>
+				<latitude>29.46491733097325</latitude>
+				<altitude>0</altitude>
+				<heading>0.0002869660469420124</heading>
+				<tilt>0</tilt>
+				<range>330.3624134603988</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars2</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-96.95220899999998,29.464844,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Holiday Beach Tower .146</name>
+			<description>PMP450i 5GHz AP1 N - CC 146 (5.8)
+PMP450i 5GHz AP2 E - CC 147 (5.1)
+PMP450i 5GHz AP3 S - CC 148 (5.8)
+PMP450i 5GHz AP4 W - CC 149 (5.1)
+
+20MHz AES
+6 Mile Max Range</description>
+			<LookAt>
+				<longitude>-96.99774436410122</longitude>
+				<latitude>28.16857303269166</latitude>
+				<altitude>0</altitude>
+				<heading>0.01834192253054835</heading>
+				<tilt>0</tilt>
+				<range>227.8959286679202</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-96.99850439451332,28.16863121419325,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Ingleside Tower .140</name>
+			<description>PMP450m 5GHz AP1 N - CC 140
+PMP450m 5GHz AP2 E - CC 141 (40MHz)
+PMP450m 5GHz AP3 S - CC 142
+PMP450m 5GHz AP4 W - CC 143 
+
+PMP450m 365 AP1 N - CC 140
+PMP450m 365 AP2 E - CC141
+
+3617771400 / AES
+
+6 mile max range</description>
+			<LookAt>
+				<longitude>-97.21896753964032</longitude>
+				<latitude>27.86745568478969</latitude>
+				<altitude>0</altitude>
+				<heading>0.4580343716644356</heading>
+				<tilt>0</tilt>
+				<range>74.75412128128941</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0010</styleUrl>
+			<Point>
+				<coordinates>-97.21879784500517,27.86752380845552,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Jonas Tower .46</name>
+			<description>PMP450m 5GHz AP1 N CC 46
+PMP450m 5GHz AP2 E CC 47
+PMP450m 5GHz AP3 S CC 48
+PMP450m 5GHz AP4 W CC 49</description>
+			<LookAt>
+				<longitude>-97.83851436625925</longitude>
+				<latitude>27.92112572532758</latitude>
+				<altitude>0</altitude>
+				<heading>0.006041137570888768</heading>
+				<tilt>0</tilt>
+				<range>85.14139975911689</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars02</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.8385621832733,27.92109277685696,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Karnes City AT .239</name>
+			<description>Tarana 5GHz BN N - Plan Id 0.1.1
+Tarana 5GHz BN E - Plan Id 0.1.0
+
+Tarana - 5G - 15Km  (9.3 miles)
+
+
+PMP450m 5GHz AP1 N - CC 239
+PMP450m 5GHz AP3 S - CC 241
+PMP450m 5GHz AP4 W - CC 242</description>
+			<LookAt>
+				<longitude>-97.91377931239542</longitude>
+				<latitude>28.88491002584131</latitude>
+				<altitude>0</altitude>
+				<heading>0.08922421672403309</heading>
+				<tilt>0</tilt>
+				<range>59.15590368615899</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-stars3</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.91381446695303,28.88504273969066,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>KBNJ Tower .58</name>
+			<description>PMP450i 5GHz
+
+AP1 North - CC 58
+AP2 East - CC 59
+AP3 South - CC 60
+AP4 West - CC 61
+
+(3617771400) AES
+
+7 mile max range</description>
+			<LookAt>
+				<longitude>-97.4187317544649</longitude>
+				<latitude>27.69671885321406</latitude>
+				<altitude>0</altitude>
+				<heading>0.08015196269016259</heading>
+				<tilt>0</tilt>
+				<range>122.0526667732308</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars022001</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.41863710835337,27.69668850371556,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Kenedy South AT .238</name>
+			<description>PMP450i 5GHz AP1 - N - CC  238 (5835) unii 40mhz
+PMP450i 5GHz AP2 - E - CC  239 (5875) unii 40mhz
+PMP450i 5GHz AP3 - S - CC  240 (5835) unii 40mhz
+PMP450m 5GHz AP4 - W - CC  241 (5875) unii 40mhz
+
+PMP450i 3.65GHz AP1 - N - CC 238 (3660)
+PMP450m 3.65GHz AP2 - E - CC 239 (3690)
+PMP450m 3.65GHz AP3 - S - CC 240 (3660) 
+PMP450i 3.65GHz AP4 - W - CC 241 (3690)
+
+AES 3617771400
+
+10 mile max range</description>
+			<LookAt>
+				<longitude>-97.61582465709745</longitude>
+				<latitude>27.7603507054559</latitude>
+				<altitude>0</altitude>
+				<heading>-1.185714950643502</heading>
+				<tilt>0</tilt>
+				<range>122361.7870492207</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars401</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.81551999999999,28.80773888888889,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Kingsville Tower .152</name>
+			<description>PMP450m 5GHz AP1 N - CC 152
+PMP450m 5GHz AP2 E - CC 153
+PMP450m 5GHz AP3 S - CC 154
+PMP450m 5GHz AP4 W - CC 155
+
+PMP450m 3.65GHz AP1 N - CC 152
+PMP450m 3.65GHz AP2 E - CC 153
+
+PMP450m 3.65GHz AP4 W - CC 155
+
+3617771400 / AES
+
+10 mile max range</description>
+			<LookAt>
+				<longitude>-97.86932447782358</longitude>
+				<latitude>27.51375015489536</latitude>
+				<altitude>0</altitude>
+				<heading>-0.05463586861806694</heading>
+				<tilt>0</tilt>
+				<range>95.59305484627504</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars5</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.86943763384382,27.5138065197665,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Marble Slab Micro Pop .16</name>
+			<description>PMP 450i 5GHz Omni - CC 16
+
+(3617771400) AES
+
+2 mile max range
+
+rooftop</description>
+			<LookAt>
+				<longitude>-97.30687159175842</longitude>
+				<latitude>27.89596533190733</latitude>
+				<altitude>0</altitude>
+				<heading>-0.1523969912979819</heading>
+				<tilt>0</tilt>
+				<range>189.0694887813731</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars022001</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.30706812327823,27.89600545686703,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Mathis Tower .212</name>
+			<description>Tarana 5GHz BN N  - Plan Id 4.3.1
+Tarana 5GHz BN E - Plan Id 4.3.2
+Tarana 5GHz BN S  - Plan Id 4.3.0
+Tarana 5GHz BN W - Plan Id 4.3.3
+
+Tarana - 5G - 15Km  (9.3 miles)
+
+
+PMP450m 5GH SW CC 212 (30MHz)
+PMP450m 5GHz SW II CC 211 (UNII-4 x 40MHz)
+PMP450m NW CC 210 
+PMP450 S CC 213
+PMP450i N CC 214 (5.1 band)
+
+PMP450m 365 NE CC 213 (3690)  
+
+(3617771400) AES</description>
+			<LookAt>
+				<longitude>-97.81064298660658</longitude>
+				<latitude>28.08298981116318</latitude>
+				<altitude>0</altitude>
+				<heading>0.017254798839403</heading>
+				<tilt>0</tilt>
+				<range>249.9422979381202</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-stars3</styleUrl>
+			<Point>
+				<coordinates>-97.81058677701104,28.08313431204618,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Matt Huie Tower .114</name>
+			<description>PMP450i 5GHz AP1 N CC 114 (4 mile max range)
+PMP450i 5GHz AP2 E CC 115 (4 mile max range)
+PMP450i 5GHz AP3 S CC 116 (4 mile max range)
+PMP450i 5GHz AP4 W CC 117 (4 mile max range)
+
+3617771400 / AES</description>
+			<LookAt>
+				<longitude>-97.80490556845132</longitude>
+				<latitude>28.34048596947041</latitude>
+				<altitude>0</altitude>
+				<heading>-7.445254445950413e-07</heading>
+				<tilt>0</tilt>
+				<range>111.766088300901</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars022001</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.80489633948341,28.34047600048532,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>McWhorter Pole .51</name>
+			<description>PMP450i 5GHz AP1 N CC 51
+PMP450i 5GHz AP2 E CC 52
+PMP450i 5GHz AP3 S CC 53
+PMP450i 5GHz AP4 W CC 54
+
+
+PMP450i 365 Omni - CC 51 (SATURATED)
+
+3617771400 / AES
+5 mile max range</description>
+			<LookAt>
+				<longitude>-97.41710834136619</longitude>
+				<latitude>27.88224143808982</latitude>
+				<altitude>0</altitude>
+				<heading>0.2027125188790713</heading>
+				<tilt>0</tilt>
+				<range>81.29872247941525</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars401</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.41698759121881,27.88227401004912,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Mission Valley AT .178</name>
+			<description>Tarana 3GHz BN N - Plan Id 2.3.0
+Tarana 3GHz BN S - Plan Id 2.3.1
+
+5.1 Band AP&apos;s
+PMP450i 5GHz AP1 N - CC 178 (5 mile max)
+PMP450i 5GHz AP2 E - CC 179 (5 mile max)
+PMP450i 5GHz AP3 S - CC 180 (5 mile max)
+PMP450i 5GHz AP4 W - CC 181 (5 mile max)
+
+PMP450i 3.65 AP N - CC 178 (10 mile max)
+PMP450i 3.65 AP W - CC 181 (10 mile max)
+
+3617771400 / AES</description>
+			<LookAt>
+				<longitude>-97.14420057673881</longitude>
+				<latitude>28.85114282466794</latitude>
+				<altitude>0</altitude>
+				<heading>-3.184482158003946e-06</heading>
+				<tilt>0</tilt>
+				<range>91.24816361532338</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-stars3</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.14418541692517,28.85105742118034,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Mustang Lane .10</name>
+			<description>PMP450i Omni - CC 115
+PMP450m 5GHz NE - CC 116
+PMP450i 5GHz SW - CC 117
+PMP450i 5GHz E - CC 118
+
+AES (3617771400) 
+
+3 mile max range</description>
+			<LookAt>
+				<longitude>-97.85121746294105</longitude>
+				<latitude>27.956126785685</latitude>
+				<altitude>0</altitude>
+				<heading>0.0003747878837441598</heading>
+				<tilt>0</tilt>
+				<range>118.5018068777657</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars00201</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.85148599999999,27.95609500000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Normana West Tower</name>
+			<description>PMP450m 3GHz AP1 N - CC 135 (40MHz)
+PMP450m 3GHz AP2 E - CC 136 (40MHz)
+PMP450m 3GHz AP3 S  - CC 137 (40MHz)
+PMP450m 3GHz AP4 W - CC 138 (40MHz)</description>
+			<LookAt>
+				<longitude>-97.82994274677321</longitude>
+				<latitude>28.54392477266499</latitude>
+				<altitude>0</altitude>
+				<heading>0.0002658944186542254</heading>
+				<tilt>0</tilt>
+				<range>179.1783716367541</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars01</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.83045683505108,28.54390261323802,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>North Aransas Pass Tower .104</name>
+			<description>PMP450m 3.65 AP1 N CC 77
+PMP450m 3.65 AP2 E CC 76
+PMP450m 3.65 AP3 S CC 78
+
+PMP450i 5GHz AP1 N CC 104
+PMP450m 5GHz AP2 E CC 105
+PMP450m 5GHz AP3 S CC 106 (5 mile max range)
+PMP450i 5GHz AP4 W CC 107
+
+
+(3617771400) AES
+
+10 mile max range</description>
+			<LookAt>
+				<longitude>-97.13952302694629</longitude>
+				<latitude>27.96164860306772</latitude>
+				<altitude>0</altitude>
+				<heading>0.3322917486010578</heading>
+				<tilt>0</tilt>
+				<range>81.64510548210397</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars00201</styleUrl>
+			<Point>
+				<coordinates>-97.13955959508058,27.96176032445334,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>North Beeville Tower .236</name>
+			<description>Tarana 5GHz BN N - Plan Id 2.7.2
+Tarana 5GHz BN E - Plan Id 2.7.0
+Tarana 5GHz BN S - Plan Id 2.7.3
+Tarana 5GHz BN W - Plan Id 2.7.1
+
+Tarana - 5G - 15Km  (9.3 miles)
+
+
+PMP450m 5GHz AP1 N - CC 236 
+PMP450m 5GHz AP2 E - CC 237 - 40MHz 
+PMP450m 5GHz AP3 S - CC 240 
+PMP450m 5GHz AP4 W - CC 239 - 40MHz
+PMP450i 5GHz SW - CC 238
+
+PMP450m 365 AP1 N - CC 236 - 40MHz
+PMP450m 365 AP2 E - CC 237  - 40MHz
+PMP450m 365 AP3 S - CC 238 - 40MHz
+PMP450m 365 AP4 W - CC 239 - 40MHz
+
+3617771400 / AES</description>
+			<LookAt>
+				<longitude>-97.78072937952008</longitude>
+				<latitude>28.46282042383261</latitude>
+				<altitude>0</altitude>
+				<heading>0.06874242240050041</heading>
+				<tilt>0.170494866878072</tilt>
+				<range>146.6505579615646</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-stars3</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.78076331376842,28.462951259394,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>North Bluntzer Tower .54</name>
+			<description>PMP450m 5GHz North - CC 54 (5.2)
+PMP450i 5GHz East - CC 55 (5.1)
+PMP450m 5GHz South - CC 56 (5.2) 
+PMP450m 5GHz West - CC 57 (5.1) 
+
+
+PMP450m 365 South - CC 56 (3660) 
+
+AES / 3617771400
+
+3 mile max range</description>
+			<LookAt>
+				<longitude>-97.77861385300534</longitude>
+				<latitude>27.98738842114659</latitude>
+				<altitude>0</altitude>
+				<heading>-1.330622206887668</heading>
+				<tilt>0</tilt>
+				<range>198.214192012941</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars1301</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.77873099999999,27.987104,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>North Gregory Tower .220</name>
+			<description>PMP450m 5GHz N - CC 220
+PMP450m 5GHz E - CC 221
+PMP450m 5GHz S - CC 222
+PMP450m 5GHz W - CC 223
+
+PMP450m 365 AP1 N - CC 220
+PMP450m 365 AP2 E - CC 221
+PMP450m 365 AP3 S - CC 222
+PMP450m 365 AP4 W - CC 223
+
+3617771400 / AES
+
+10 mile max range</description>
+			<LookAt>
+				<longitude>-97.2437637344625</longitude>
+				<latitude>27.99708899563292</latitude>
+				<altitude>0</altitude>
+				<heading>-1.309198998303203</heading>
+				<tilt>0</tilt>
+				<range>1132.903991390462</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars1301</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.24629240459842,27.99720632247403,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>North Orange Grove Deluane Tower .234</name>
+			<description>PMP450i 5GHz AP1 N CC 234
+PMP450i 5GHz AP2 E CC 235
+PMP450i 5GHz AP3 S CC 236
+PMP450i 5GHz AP4 W CC 237
+
+5.1 x 40MHz</description>
+			<LookAt>
+				<longitude>-97.93571876523583</longitude>
+				<latitude>28.00756728828291</latitude>
+				<altitude>0</altitude>
+				<heading>-0.03957124903660117</heading>
+				<tilt>0</tilt>
+				<range>82.62607363318527</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars02</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.93592071135632,28.007529380362,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>North Taft Tower .69</name>
+			<description>PMP450i 365 AP1 N - CC 69
+PMP450i 365 AP2 E - CC 70
+PMP450i 365 AP3 S - CC 71
+PMP450i 365 AP4 W - CC 72
+
+10 mile max</description>
+			<LookAt>
+				<longitude>-97.36798941102714</longitude>
+				<latitude>28.01873662405715</latitude>
+				<altitude>0</altitude>
+				<heading>-0.1193214741937205</heading>
+				<tilt>0</tilt>
+				<range>108.6864050682212</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars02</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.36805770503958,28.01872249586414,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Odem AT .186</name>
+			<description>PMP450m 5GHz AP1 N - CC 186
+PMP450m 5GHz AP2 E - CC 187
+PMP450m 5GHz AP3 S - CC 188
+PMP450m 5GHz AP4 W - CC 189
+
+PMP450m 365 AP1 N - CC 186
+PMP450m 365 AP2 E - CC 187
+PMP450m 365 AP3 S - CC 188
+PMP450m 365 AP4 W - CC 189</description>
+			<LookAt>
+				<longitude>-97.58380973491145</longitude>
+				<latitude>27.94727373316041</latitude>
+				<altitude>0</altitude>
+				<heading>9.385615875813478e-05</heading>
+				<tilt>0</tilt>
+				<range>106.0963341302616</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars0030</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.58400027152759,27.94732785971371,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Odem GE .228</name>
+			<description>Angelita Estates Customer ONLY
+PMP450m 5GHz South</description>
+			<LookAt>
+				<longitude>-97.57942571587449</longitude>
+				<latitude>27.95292745101576</latitude>
+				<altitude>0</altitude>
+				<heading>-2.032925175808614</heading>
+				<tilt>0</tilt>
+				<range>114.8354637652984</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars0030</styleUrl>
+			<Point>
+				<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+				<coordinates>-97.57919900000002,27.952883,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Odem Smith Gin Rooftop .80</name>
+			<description>PMP450m 5GHz AP1 N - CC 82
+PMP450m 5GHz AP2 E - CC 83
+PMP450m 5GHz AP3 S - CC 80
+PMP450m 5GHz AP4 W - CC 81
+
+(3617771400) AES
+
+10 mile max range</description>
+			<LookAt>
+				<longitude>-97.60822210313242</longitude>
+				<latitude>27.96913120128846</latitude>
+				<altitude>0</altitude>
+				<heading>-2.616233899986774</heading>
+				<tilt>0</tilt>
+				<range>529.0884124137527</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars43</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.60950171053369,27.96923160586816,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Orange Grove GE .112</name>
+			<description>PMP450m AP1 N - CC 112 (5802)
+PMP450m AP2 E - CC 113 (5735)
+PMP450m AP3 S - CC 114 (5795)
+PMP450m AP4 W - CC 115 (5735)
+
+3617771400 / AES
+
+10 mile max range</description>
+			<LookAt>
+				<longitude>-97.93341030951591</longitude>
+				<latitude>27.96081359168716</latitude>
+				<altitude>0</altitude>
+				<heading>0.001404133917574081</heading>
+				<tilt>0</tilt>
+				<range>240.7147699491637</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars022011</styleUrl>
+			<Point>
+				<coordinates>-97.93366398212453,27.96083346055536,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Orange Grove Water Tower .110</name>
+			<description>Tarana 3GHz BN N - Plan Id 0.22.0
+Tarana 3GHz BN E - Plan Id 0.22.1
+Tarana 3GHz BN S - Plan Id 0.22.2
+Tarana 3GHz BN W - Plan Id 0.22.3</description>
+			<LookAt>
+				<longitude>-97.94027148575624</longitude>
+				<latitude>27.95666045812927</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0921209992096087</heading>
+				<tilt>0</tilt>
+				<range>169.3051863273792</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-stars3</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.94070223352706,27.95681249894366,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Oscar Rivera Tower .36</name>
+			<description>PMP450m N 5GHz CC 36 (3 mile max)
+PMP450i 5GHz S CC 37 (3 mile max)
+PMP450i 5GHz E CC 38
+PMP450i 5GHz W CC 39
+PMP450i 3.65 Omni - CC 36 (2 mile max)
+
+3617771400 AES
+
+100ft tower</description>
+			<LookAt>
+				<longitude>-97.56315585451014</longitude>
+				<latitude>27.98367631893593</latitude>
+				<altitude>0</altitude>
+				<heading>-0.2722933477792636</heading>
+				<tilt>0</tilt>
+				<range>190.7858468663604</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars02201011</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.56330719125403,27.98368513654472,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Owl Ranch Tower .175</name>
+			<description>PMP450i 365 Omni CC-175 (3660) 
+
+PMP450i 5GHz AP1 N - CC 175 (5875)
+PMP450i 5GHz AP2 E - CC 176 (5180)
+PMP450i 5GHz AP3 S - CC 177 (5875)
+PMP450i 5GHz AP4 W - CC 178 (5180)
+
+3617771400 AES
+4 mile max range
+
+
+
+
+
+Temporarily disabled till conversions complete
+PMP450i 365 AP1 N CC-175 disabled 
+PMP450i 365 AP2 E CC-176  disabled
+PMP450i 365 AP3 S CC-177 disabled
+PMP450i 365 AP4 N CC-178 disabled</description>
+			<styleUrl>#msn_blu-stars02</styleUrl>
+			<Point>
+				<coordinates>-98.10560378208253,27.88635079836394,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Palm Harbor RV Pole .143</name>
+			<description>PMP450i 5GHz AP1 N - CC 143 (5190)
+PMP450i 5GHz AP2 E - CC 144
+PMP450i 5GHz AP3 S - CC 145
+PMP450i 5GHz AP4 W - CC 146
+
+3617771400 AES
+4 mile max range</description>
+			<LookAt>
+				<longitude>-97.09019302373468</longitude>
+				<latitude>27.96888966365679</latitude>
+				<altitude>0</altitude>
+				<heading>0.3554170805197187</heading>
+				<tilt>0</tilt>
+				<range>100.0532024730206</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars00201</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.09016972584539,27.96879393770217,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Patrick Farms GE .44</name>
+			<description>PMP450i 5GHz AP1 N - CC 44
+PMP450m 5GHz AP2 E - CC 45
+PMP450i 5GHz AP3 S - CC 46
+PMP450i 5GHz AP4 W - CC 47
+
+3617771400 AES
+4 mile max range</description>
+			<LookAt>
+				<gx:TimeStamp><when>2008-10-31</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-97.91392783659597</longitude>
+				<latitude>27.67021004773861</latitude>
+				<altitude>0</altitude>
+				<heading>-14.61175512519926</heading>
+				<tilt>0</tilt>
+				<range>115.9664385502944</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars0030</styleUrl>
+			<Point>
+				<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+				<coordinates>-97.91403686968077,27.67015835308383,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pettus AT .159</name>
+			<description>PMP450m 365 AP1 N CC 159
+PMP450m 365 AP2 E CC 160 x 40MHz
+PMP450m 5GHz AP3 S CC 161
+PMP450m 365 AP4 W CC 162 x 40MHz
+
+10 Mile Max Range 
+3617771400 AES</description>
+			<LookAt>
+				<longitude>-97.79202449511941</longitude>
+				<latitude>28.62212402723408</latitude>
+				<altitude>0</altitude>
+				<heading>-1.166229887825635e-11</heading>
+				<tilt>0</tilt>
+				<range>106.605238062062</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars31</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.79206925860223,28.62206543823287,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Placedo AT .190</name>
+			<description>Tarana 365 BN S - Plan Id 4.12.0
+
+
+PMP450m 5GHz AP1 N - CC 190
+PMP450m 5GHz AP2 E - CC 191
+PMP450m 5GHz AP3 S - CC 192
+PMP450m 5GHz AP4 W - CC 193
+Max Range 7 miles
+
+PMP450m 365 AP1 N - CC 190
+PMP450m 365 AP2 E - CC 191
+PMP450m 365 AP4 W - CC 193
+Max Range 10 miles</description>
+			<LookAt>
+				<longitude>-96.86547222817525</longitude>
+				<latitude>28.69836157689342</latitude>
+				<altitude>0</altitude>
+				<heading>9.112776601127267e-05</heading>
+				<tilt>0</tilt>
+				<range>171.2534418371847</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-stars3</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-96.86551086114294,28.69852367048985,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Port Aransas Dunes Rooftop .76</name>
+			<description>(The Dunes condo rooftop)
+
+Tarana 5GHz BN W - Plan Id 3.10.0 
+
+Tarana - 5G - 15Km (9.3 miles)
+
+PMP450i 5GHz W CC 76
+PMP450i 3.65 W CC 76
+
+PMP450i 5GHz S CC 77
+
+3617771400 AES
+
+10 mile max range</description>
+			<LookAt>
+				<gx:TimeStamp><when>2008-10-31</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-97.05462650970085</longitude>
+				<latitude>27.82794299942659</latitude>
+				<altitude>0</altitude>
+				<heading>0.0006449965496953502</heading>
+				<tilt>0</tilt>
+				<range>126.4020937820166</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-stars3</styleUrl>
+			<Point>
+				<coordinates>-97.05490637709916,27.82787903622371,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Portland American Tower .84</name>
+			<description>PMP450m 5GHz AP1 N - CC 84
+PMP450m 5GHz AP2 E - CC 85
+PMP450  5GHz AP3 S - CC 86
+PMP450m 5GHz AP4 W - CC 87
+
+PMP450 3.65 AP NE - CC 77
+
+3617771400 / AES
+10 mile max range</description>
+			<LookAt>
+				<longitude>-97.32094717171246</longitude>
+				<latitude>27.87502653355824</latitude>
+				<altitude>0</altitude>
+				<heading>-2.481630284834701</heading>
+				<tilt>0</tilt>
+				<range>225.3832608369929</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars401</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.32109631335005,27.8749533143814,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Portland Old Office Pole .12</name>
+			<description>PMP450i 5GHz Omni - CC 11
+PMP450i 5GHz 60 Degree Sector NW - CC 12
+PMP450i 5GHz 60 Degree Sector SW - CC 13
+
+3617771400 AES
+
+3 mile max range</description>
+			<LookAt>
+				<longitude>-97.31676478426574</longitude>
+				<latitude>27.88827176853878</latitude>
+				<altitude>0</altitude>
+				<heading>0.1779300982183016</heading>
+				<tilt>0</tilt>
+				<range>159.4689215360474</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars401</styleUrl>
+			<Point>
+				<coordinates>-97.3169538497949,27.88858586722211,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Portland Tower .156</name>
+			<description>Tarana 3GHz BN N - Plan Id 1.13.1
+Tarana 3GHz BN E - Plan Id 1.13.2
+Tarana 3GHz BN S - Plan Id 1.13.0
+Tarana 3GHz BN W - Plan Id 1.13.3
+
+
+PMP450m AP1 N CC 156
+PMP450m AP2 E CC 157 
+PMP450m AP3 S CC 158
+PMP450m AP4 W CC 159 
+3617771400 / AES
+
+7 mile max range</description>
+			<LookAt>
+				<longitude>-97.31941100702242</longitude>
+				<latitude>27.90851988479959</latitude>
+				<altitude>0</altitude>
+				<heading>0.1984817503379515</heading>
+				<tilt>0</tilt>
+				<range>347.807156130123</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-stars3</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.32033900468016,27.90868203302743,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Power Tower .90</name>
+			<description>PMP450i 5GHz Omni - CC 90
+PMP450i 5GHz 60 Degree - CC 91 (ENE)
+PMP450i 5GHz 90 Degree - CC 92 (NW)
+
+3617771400 AES
+3 mile max range</description>
+			<LookAt>
+				<longitude>-97.6641585626565</longitude>
+				<latitude>27.94347009410821</latitude>
+				<altitude>0</altitude>
+				<heading>-1.020596276067926</heading>
+				<tilt>0</tilt>
+				<range>85.90356707079471</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars022001</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.66419252281445,27.94339995702489,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Premont Tower .226</name>
+			<description>PMP450m 365 AP1 N - CC 226
+PMP450m 365 AP2 E - CC 227
+PMP450m 365 AP3 S - CC 228
+PMP450m 365 AP4 W - CC 229
+
+3617771400 AES
+10 mile max range</description>
+			<LookAt>
+				<longitude>-98.18541842796886</longitude>
+				<latitude>27.38005684691757</latitude>
+				<altitude>0</altitude>
+				<heading>8.350264816979103e-05</heading>
+				<tilt>0</tilt>
+				<range>92.99869734305263</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars0030</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.18556993434208,27.37985873189702,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Proco Tower .116</name>
+			<description>PMP450i 5GHz OMNI CC 116
+
+PMP450m 3.65 AP1 N - CC 116 - 40MHz
+PMP450m 3.65 AP2 E - CC 117 - 40MHz
+PMP450i 3.65 AP3 S - CC 118 - 40MHz
+PMP450m 3.65 AP4 W - CC 119 - 40MHz
+
+3617771400 AES
+
+10 mile max range</description>
+			<LookAt>
+				<longitude>-98.23284302303703</longitude>
+				<latitude>27.56044468991292</latitude>
+				<altitude>0</altitude>
+				<heading>-2.667719515348296</heading>
+				<tilt>0</tilt>
+				<range>67.20074904049444</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars31</styleUrl>
+			<Point>
+				<coordinates>-98.23298933878883,27.56043975855189,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Ramirez Pole .91</name>
+			<description>PMP450i 5GHz Omni - CC 91 (5.1)
+PMP450m 5GHz SW - CC 92 (5.1)
+PMP450i 5GHz NE - CC 93 (5.1)
+
+3617771400 / AES
+3 mile max range</description>
+			<LookAt>
+				<longitude>-97.85017945125199</longitude>
+				<latitude>27.88110967972346</latitude>
+				<altitude>0</altitude>
+				<heading>0.0006176010400024145</heading>
+				<tilt>0</tilt>
+				<range>69.49526271538562</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars00201</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.8504187772251,27.88108599797593,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Rancho Banquete Micro Pop .34</name>
+			<description>PMP450i 3.65 Omni 
+40MHz channel CC34
+1 mile max range
+
+PMP450i 5GHz AP1 N - CC34
+PMP450i 5GHz AP NII - CC33
+PMP450i 5GHz AP2 E - CC35
+PMP450i 5GHz AP3 S - CC36
+PMP450i 5GHz AP SII - CC38
+PMP450i 5GHz AP4 W - CC37
+5.1 band 4 mile max range
+
+3617771400 AES</description>
+			<LookAt>
+				<longitude>-97.83295910015508</longitude>
+				<latitude>27.80861612694712</latitude>
+				<altitude>0</altitude>
+				<heading>0.007376313292266807</heading>
+				<tilt>0</tilt>
+				<range>152.175648518629</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars00201</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.83308196079867,27.80863375000415,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Ranger Road Tower .232</name>
+			<description>Tarana 5GHz BN N -  Plan Id 5.20.0
+Tarana 5GHz BN S -  Plan Id 5.20.1
+
+Tarana - 5G - 15Km  (9.3 miles)
+
+
+PMP450m 5GHz N - CC 99 (40MHz)
+PMP450m 5GHz E - CC 101
+PMP450m 5GHz S - CC 102
+PMP450m 5GHz W - CC 103
+
+PMP450m 365 N - CC 104 (40MHZ)
+PMP450m 365 S - CC 102 (40MHZ)
+
+450i 900MHz North (LTE conversions only)
+
+3617771400 / AES
+10 mile max range</description>
+			<LookAt>
+				<longitude>-97.91876705031859</longitude>
+				<latitude>28.1046732154187</latitude>
+				<altitude>0</altitude>
+				<heading>-0.04963351579731506</heading>
+				<tilt>0</tilt>
+				<range>119.5891373335874</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-stars3</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.91887701687924,28.10475311912833,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Refugio Tower .160</name>
+			<description>5792 - 9 MILE MAX RANGE
+PMP450i 5GHz AP1 N - CC160 - 40MHz
+PMP450i 5GHz AP2 NE - CC161
+PMP450i 5GHz AP3 SE - CC162 - 40MHz
+PMP450i 5GHz AP4 S - CC163 - 40MHz
+PMP450i 5GHz AP5 SW - CC164
+PMP450i 5GHz AP6 NW - CC165 - UNII-4 - 40MHz
+
+3617771400 AES</description>
+			<LookAt>
+				<longitude>-97.28404293775868</longitude>
+				<latitude>28.30840069380895</latitude>
+				<altitude>0</altitude>
+				<heading>0.2345634378407494</heading>
+				<tilt>0</tilt>
+				<range>204.693651438748</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars00201</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.28438800000001,28.308476,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Ricardo East Tower .194</name>
+			<description>PMP450i 5GHz AP1 N - CC194 (5230) 40mhz
+PMP450i 5GHz AP2 E - CC195 (5875) 40mhz UNII-4 Band
+PMP450i 5GHz AP3 S - CC196 (5230) 40mhz
+PMP450i 5GHz AP S II - CC 198
+PMP450i 5GHz AP4 W - CC197 (5875) 40mhz UNII-4 Band
+
+
+4 mile max range
+3617771400 AES</description>
+			<LookAt>
+				<longitude>-97.82245872041642</longitude>
+				<latitude>27.43756346560546</latitude>
+				<altitude>0</altitude>
+				<heading>0.01165935851821955</heading>
+				<tilt>0</tilt>
+				<range>81.94530542136499</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars00201</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.8225020087675,27.43758755603055,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Ricardo GE .196</name>
+			<description>Tarana 5GHz BN N  -  Plan Id 4.5.1
+Tarana 5GHz BN W  -  Plan Id 4.5.0
+
+Tarana - 5G - 15Km  (9.3 miles)
+
+
+PMP450m 365 AP1 N - CC 196
+PMP450m 365 AP2 E - CC 197
+PMP450m 365 AP3 S - CC 198
+PMP450m 365 AP4 W - CC 199
+
+3617771400 AES
+10 mile max range</description>
+			<LookAt>
+				<longitude>-97.85350316316338</longitude>
+				<latitude>27.42427406392403</latitude>
+				<altitude>0</altitude>
+				<heading>-7.266962992396742</heading>
+				<tilt>0</tilt>
+				<range>662.7080805840329</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-stars3</styleUrl>
+			<Point>
+				<gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+				<coordinates>-97.85478468855726,27.42381706136919,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Ricardo South Tower .199</name>
+			<description>PMP450m 365 AP1 N - CC 99 - 40MHz
+PMP450m 365 AP2 E - CC 100 - 40MHz
+PMP450m 365 AP3 S - CC 101 - 40MHz
+PMP450m 365 AP4 W - CC 102 - 40MHz
+
+10 Mile Max
+AES / 3617771400</description>
+			<LookAt>
+				<longitude>-97.80049351808037</longitude>
+				<latitude>27.39885061982395</latitude>
+				<altitude>0</altitude>
+				<heading>3.059370517376805e-05</heading>
+				<tilt>0</tilt>
+				<range>83.65289198036372</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars21</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.80059,27.39893,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Ricardo West Tower .198</name>
+			<description>PMP450i 5GHz AP1 N - CC198 (5825) UNII-4, on 40MHz
+PMP450i 5GHz AP2 E - CC199 (5230) UNII-4, on 40MHz
+PMP450i 5GHz AP3 S - CC200 (5825) UNII-4, on 40MHz
+PMP450i 5GHz AP4 W - CC201 (5230) UNII-4, on 40MHz
+
+
+4 mile max range
+3617771400 AES</description>
+			<LookAt>
+				<longitude>-97.88745556871451</longitude>
+				<latitude>27.42023267771138</latitude>
+				<altitude>0</altitude>
+				<heading>-0.01828285277775375</heading>
+				<tilt>0</tilt>
+				<range>77.286109266355</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars00201</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.88766905760122,27.42018702057116,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Riviera AT .202</name>
+			<description>Tarana 3GHz BN E - Plan Id 1.4.0
+
+
+
+PMP450m 5GHz AP1 N - CC 202
+PMP450m 5GHz AP2 E - CC 203
+PMP450m 5GHz AP3 S - CC 204
+PMP450m 5GHz AP4 W - CC 205
+
+6 mile max range</description>
+			<LookAt>
+				<longitude>-97.81704866387767</longitude>
+				<latitude>27.31086297602188</latitude>
+				<altitude>0</altitude>
+				<heading>4.098909143643332e-05</heading>
+				<tilt>0</tilt>
+				<range>133.6576662010391</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-stars3</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.8171508584997,27.3109797856766,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Robstown GE .38</name>
+			<description>Tarana 5GHz BN N   -  Plan Id 4.8.1
+Tarana 5GHz BN E  -  Plan Id 4.8.2
+Tarana 5GHz BN W  -  Plan Id 4.8.0
+
+Tarana - 5G - 15Km (9.3 miles)
+
+PMP450m 5GHz W - CC 41 (6 mile max range)
+
+PMP450m 3.65 AP1 N - CC 38
+PMP450m 3.65 AP2 E - CC 39 - 40MHz
+PMP450m 3.65 AP3 S - CC 40
+PMP450m 3.65 AP4 W - CC 41 - 40MHz
+
+7 mile max range
+
+3617771400 AES</description>
+			<LookAt>
+				<longitude>-97.66901191179085</longitude>
+				<latitude>27.7755570562073</latitude>
+				<altitude>0</altitude>
+				<heading>-2.644289080136369</heading>
+				<tilt>0</tilt>
+				<range>551.5644653141517</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-stars3</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.6696481214169,27.7756569469476,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Robstown Tower .124</name>
+			<description>PMP450m 5GHz N CC 20 - 40MHz
+PMP450m 5GHz E CC 21 - 40MHz
+PMP450m 5GHz S CC 22
+PMP450m 5GHz W CC 23 - 40MHz
+
+3617771400 AES
+
+10 mile max range</description>
+			<LookAt>
+				<gx:TimeStamp><when>2011-11-23</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-97.63752463555653</longitude>
+				<latitude>27.75335126341267</latitude>
+				<altitude>0</altitude>
+				<heading>0.01311184639731746</heading>
+				<tilt>0</tilt>
+				<range>37.8017229802401</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars1301</styleUrl>
+			<Point>
+				<coordinates>-97.63757271870429,27.75331695952129,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Rockport Tower .144</name>
+			<description>Tarana 3GHz BN N - Plan Id 2.11.0
+
+PMP450m 5GHz AP1 N - CC 144 40MHz
+PMP450m 5GHz AP2 E - CC 145 40MHz
+PMP450m 5GHz AP3 S - CC 146 40MHz
+PMP450m 5GHz AP4 W - CC 147 40MHz
+
+PMP450m 365 AP1 N - CC 144 20MHz
+PMP450m 365 AP2 E - CC 145 20MHz
+PMP450m 365 AP3 S - CC 146 20MHz
+
+3617771400 AES
+
+10 mile max range</description>
+			<LookAt>
+				<gx:TimeStamp><when>2011-11-23</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-97.09340001699691</longitude>
+				<latitude>28.0336283989237</latitude>
+				<altitude>0</altitude>
+				<heading>0.611306495777901</heading>
+				<tilt>0</tilt>
+				<range>214.4826799634064</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-stars3</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.09086499999999,28.033763,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Rockport TX AT .145</name>
+			<description>PMP450m 5GHz AP1 N - CC45 (5840)
+PMP450m 5GHz AP2 E - CC46 (5756)
+PMP450i 5GHz AP3 S - CC47 (5840)
+PMP450m 5GHz AP4 W - CC48 (5756)
+PMP450m 365 AP1 N - CC45
+PMP450m 365 AP2 E - CC46
+PMP450m 365 AP3 S - CC47
+PMP450m 365 AP4 W - CC48 (3585) -  CBRS Req V16.2</description>
+			<LookAt>
+				<longitude>-97.07142109233722</longitude>
+				<latitude>28.06473815278304</latitude>
+				<altitude>0</altitude>
+				<heading>3.462970857996617e-05</heading>
+				<tilt>0</tilt>
+				<range>105.5633317779196</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars02</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.07145418890704,28.06479065268138,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>San Diego Tower .120</name>
+			<description>Tarana 5GHz BN N -  Plan Id 5.3.1
+Tarana 5GHz BN E -  Plan Id 5.3.0
+
+Tarana - 5G - 15Km  (9.3 miles)
+
+
+PMP450m 5GHz N - CC 120 (5840)
+PMP450m 5GHz E - CC 121 (5800)
+PMP450m 5GHz S - CC 122 (5745)
+PMP450m 5GHz W - CC 123 (5800)
+PMP450i 5GHz N - CC 124 (5745)
+PMP450i 5GHz E - CC 125 (5510)
+PMP450i 5GHz S - CC 119 (5775)
+
+PMP450m 3.65 N - CC 120 (3660)
+PMP450m 3.65 E - CC 121 (3690)
+PMP450m 3.65 S - CC 122 (3660)
+PMP450m 3.65 W - CC 123 (3690)
+
+10 mile max range
+3617771400 / AES</description>
+			<LookAt>
+				<longitude>-98.24685466283849</longitude>
+				<latitude>27.75601019164182</latitude>
+				<altitude>0</altitude>
+				<heading>0.001967734767932062</heading>
+				<tilt>0</tilt>
+				<range>40.60632458864049</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-stars3</styleUrl>
+			<Point>
+				<coordinates>-98.24694914006764,27.75606246535338,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Sandia Fire Department .94</name>
+			<description>PMP450i 3.65 Omni - CC 94 (30MHz)
+PMP450i 3.65 South - CC 95 (40MHz)
+4 mile max range
+
+PMP450i 5GHz E - CC 95 (5.1 Band)
+PMP450m 5GHz S - CC 96 (5.1 Band)
+
+3617771400 AES</description>
+			<LookAt>
+				<longitude>-97.87798182460666</longitude>
+				<latitude>28.02278798775419</latitude>
+				<altitude>0</altitude>
+				<heading>-1.797424408189284</heading>
+				<tilt>0</tilt>
+				<range>197.0658923459726</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars51</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.87759296576526,28.02306904261677,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Sandy Hollow .31</name>
+			<description>PMP450i 5GHz Omni - CC 31 (5.1)
+PMP450i 5GHz E - CC 32
+4 mile max range
+3617771400 AES</description>
+			<Camera>
+				<longitude>-97.82386672477872</longitude>
+				<latitude>27.9593606794692</latitude>
+				<altitude>110.5299418217819</altitude>
+				<heading>-3.397485139458106</heading>
+				<tilt>0.8264106566685495</tilt>
+				<roll>-3.167906593217016</roll>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</Camera>
+			<styleUrl>#msn_blu-stars401</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.82414966201749,27.9593532727568,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Shoreline Rooftop .20</name>
+			<description>Tarana 3GHz BN S -  Plan Id 5.14.0
+Tarana 3GHz BN W -  Plan Id 5.14.1
+
+
+
+PMP450m West - CC 82 
+PMP450 South - CC 22 
+3617771400 / AES</description>
+			<LookAt>
+				<longitude>-97.39145585722507</longitude>
+				<latitude>27.79862521565776</latitude>
+				<altitude>0</altitude>
+				<heading>0.05315763345556469</heading>
+				<tilt>0</tilt>
+				<range>368.9617851371891</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-stars3</styleUrl>
+			<Point>
+				<coordinates>-97.39164234061739,27.79900583295709,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Sinton Tower .208</name>
+			<description>Tarana 3GHz BN E -  Plan Id 5.6.2
+Tarana 3GHz BN S -  Plan Id 5.6.1
+Tarana 3GHz BN W -  Plan Id 5.6.0
+
+
+
+PMP450m 5GHz AP1 N - CC 208
+PMP450m 5GHz AP3 S - CC 210
+PMP450m 5GHz AP4 W - CC 211
+PMP450m 5GHz AP3 S II - CC 212  max 5 miles
+PMP450m 5GHz AP4 W II- CC 213 UNII-4
+
+PMP450m 3.65 AP1 N - CC84
+PMP450m 365 AP2 E - CC85
+PMP450m 365 AP3 S - CC86
+PMP450m 365 AP4 W - CC87
+
+3617771400 / AES
+
+10 mile max range</description>
+			<LookAt>
+				<longitude>-97.50104880265656</longitude>
+				<latitude>28.05127848769364</latitude>
+				<altitude>0</altitude>
+				<heading>-0.05145302079212732</heading>
+				<tilt>0</tilt>
+				<range>83.04226796071677</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-stars3</styleUrl>
+			<Point>
+				<coordinates>-97.50107799999999,28.051207,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Skidmore Tower .240</name>
+			<description>Cambium PMP450m North CC-240 5840
+Cambium PMP450m East CC-241 5810 40mhz
+Cambium PMP450m South CC-242 5840
+Cambium PMP450m West CC-243 5820
+
+10 mile max range
+
+3617771400 / AES</description>
+			<LookAt>
+				<longitude>-97.67574730153942</longitude>
+				<latitude>28.24629031516973</latitude>
+				<altitude>0</altitude>
+				<heading>-1.51256183994544</heading>
+				<tilt>0</tilt>
+				<range>1261.106376842167</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars1000</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.67671523934015,28.24639694220945,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Skidmore TX SQA AT .241</name>
+			<description>5GHz Tarana BN E
+5GHz Tarana BN S
+5GHz Tarana BN W
+
+PMP450m 365 AP1 N - CC41 (3660)
+PMP450m 365 AP2 E - CC42 (3690)
+PMP450m 365 AP3 S - CC43 (3660)
+PMP450m 365 AP4 W - CC44 (3690)
+10 mile max range
+
+PMP450m 5g AP1 N - CC41 (5800)
+PMP450m 5g AP2 E - CC42 (5775)
+PMP450m 5g AP3 S - CC43 (5755)
+PMP450m 5g AP4 W - CC44 (5775)
+5 mile max range
+
+
+3617771400 AES</description>
+			<LookAt>
+				<longitude>-97.70998000007198</longitude>
+				<latitude>28.30569000042713</latitude>
+				<altitude>0</altitude>
+				<heading>-3.416631352695146e-11</heading>
+				<tilt>0</tilt>
+				<range>1000.000011193091</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-stars</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.70998000007198,28.30569000042713,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>South George West Tower .92</name>
+			<description>PMP450i 3.65 North - CC 92
+PMP450i 3.65 East - CC 93
+PMP450i 3.65 South - CC 94
+PMP450m 3.65 West - CC 95
+3617771400 AES
+
+
+10 mile max range</description>
+			<LookAt>
+				<longitude>-98.10499890938235</longitude>
+				<latitude>28.21777352103879</latitude>
+				<altitude>0</altitude>
+				<heading>-0.234697656307519</heading>
+				<tilt>0</tilt>
+				<range>9.773910187229992</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars102</styleUrl>
+			<Point>
+				<coordinates>-98.10499375430983,28.21776949862285,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>South Rockport .147</name>
+			<description>Tarana 5GHz BN N -  Plan Id 0.20.0
+Tarana 5GHz BN S -  Plan Id 0.20.1
+Tarana 5GHz BN W -  Plan Id 0.20.2
+
+
+Tarana - 5GHz - 15Km  (9.3 miles)</description>
+			<LookAt>
+				<longitude>-97.07577260377334</longitude>
+				<latitude>28.00161907021673</latitude>
+				<altitude>0</altitude>
+				<heading>0.2707279847838865</heading>
+				<tilt>0</tilt>
+				<range>169.1552929056229</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-stars3</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.07599883431966,28.00183472114547,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>South St. Paul GE .126</name>
+			<description>PMP450m 5GHz AP1 N - CC 26  UNII-4, on 40MHz
+PMP450m 5GHz AP2 E - CC 27
+PMP450m 5GHz AP3 S - CC 28
+PMP450m 5GHz AP4 W - CC 29
+
+5 mile max range
+3617771400 / AES</description>
+			<LookAt>
+				<longitude>-97.55673008502345</longitude>
+				<latitude>28.08158931888315</latitude>
+				<altitude>0</altitude>
+				<heading>0.1051814566368823</heading>
+				<tilt>0</tilt>
+				<range>408.939458079424</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars12</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.55723508256654,28.08162659537938,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Southeast Skidmore Tower .242</name>
+			<description>PMP450m 365 AP1 N - CC 142
+PMP450m 365 AP2 E - CC 143
+PMP450m 365 AP3 S - CC 144
+PMP450m 365 AP4 W - CC 145</description>
+			<LookAt>
+				<longitude>-97.63248428871124</longitude>
+				<latitude>28.21847749105033</latitude>
+				<altitude>0</altitude>
+				<heading>-3.198079262839352e-05</heading>
+				<tilt>0</tilt>
+				<range>69.86967740551474</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars003</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.63241500696498,28.21852086709655,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>St. Paul GE .128</name>
+			<description>PMP450m 5GHz AP1 N CC 128 (7 mile max)
+PMP450m 5GHz AP2 E CC 129
+PMP450m 5GHz AP3 S CC 130 (7 mile max)
+PMP450m 5GHz AP4 W CC 131
+3617771400 / AES
+
+ePMP 360
+1944
+
+10 mile max range</description>
+			<LookAt>
+				<longitude>-97.58795991661704</longitude>
+				<latitude>28.11600688497592</latitude>
+				<altitude>0</altitude>
+				<heading>0.001729152925155658</heading>
+				<tilt>0</tilt>
+				<range>62.20700046631836</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars02201011</styleUrl>
+			<Point>
+				<coordinates>-97.58802514360411,28.11595634387746,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Swinney Switch Tower .74</name>
+			<description>Cambium 450m N - CC 74 - 40MHz
+Cambium 450m E - CC 75 - 40MHz
+Cambium 450m S - CC 76 - 40MHz
+Cambium 450m W - CC 77 - 40MHz
+
+7 mile max range
+3617771400 / AES</description>
+			<LookAt>
+				<longitude>-97.91937380128309</longitude>
+				<latitude>28.24423486018393</latitude>
+				<altitude>0</altitude>
+				<heading>-1.662602107043319</heading>
+				<tilt>0</tilt>
+				<range>221.9411224016124</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars31</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.91924899999999,28.244284,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Taft GE .48</name>
+			<description>450i  5ghz AP1 N CC 109  UNII-4 band
+450m  5ghz AP NE CC 110  UNII-4 band
+450m  5ghz AP2 E CC 111  UNII-4 band
+450m  5ghz AP3 S CC 112  UNII-4 band
+450m  5ghz AP4 W CC 113  UNII-4 band
+
+450m 365 N CC 48
+
+3617771400 / AES
+
+10 mile max range</description>
+			<LookAt>
+				<gx:TimeStamp><when>2011-11-23</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-97.40395476196301</longitude>
+				<latitude>27.98062966041738</latitude>
+				<altitude>0</altitude>
+				<heading>-2.520398208546708</heading>
+				<tilt>0</tilt>
+				<range>211.6842008697787</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars501</styleUrl>
+			<Point>
+				<coordinates>-97.40436925267583,27.98024672146087,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Three Rivers .134</name>
+			<description>Tarana 3GHz BN N - Plan Id 4.17.0
+Tarana 3GHz BN E - Plan Id 4.17.1
+
+
+PMP450i 5GHz AP1 N - CC 34 (20MHz)
+PMP450i 5GHz AP2 E - CC 35 (20MHz)
+PMP450i 5GHz AP3 S - CC 36 (20MHz
+PMP450i 5GHz AP4 W - CC 37 (20MHz)
+7 Mile Max Range
+
+
+PMP450m 365 AP1 N - CC 34
+PMP450m 365 AP2 E - CC 35
+PMP450m 365 AP3 S -CC 36
+PMP450m 365 AP4 W - CC 37
+10 Mile Max Range
+
+
+3617771400 AES</description>
+			<Camera>
+				<longitude>-98.17287138891331</longitude>
+				<latitude>28.40657728174775</latitude>
+				<altitude>186.4407281312853</altitude>
+				<heading>-5.856819528479202</heading>
+				<tilt>0.5938801008442282</tilt>
+				<roll>-5.362656167730259</roll>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</Camera>
+			<styleUrl>#msn_grn-stars3</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.17241494887806,28.40670787892923,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Tom Brown Tower .135</name>
+			<description>PMP450i 365 Omni - CC 135 - 40MHz
+PMP450i 5GHz Omni - CC 135 (5.1) - 40MHz
+
+3617771400 AES
+5 mile max</description>
+			<LookAt>
+				<longitude>-97.58697488543828</longitude>
+				<latitude>28.1920370860631</latitude>
+				<altitude>0</altitude>
+				<heading>1.053682448692111e-06</heading>
+				<tilt>0</tilt>
+				<range>61.52793414408315</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars02</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.58699416371688,28.19205913414387,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Tynan GE .164</name>
+			<description>PMP450m AP1 N - CC 164
+PMP450 AP2 E - CC 165
+PMP450m AP3 S - CC 166
+PMP450m AP4 W - CC 167
+
+3617771400 / AES
+
+10 mile max range</description>
+			<LookAt>
+				<longitude>-97.75828089265808</longitude>
+				<latitude>28.16634010806422</latitude>
+				<altitude>0</altitude>
+				<heading>1.977188680273669e-05</heading>
+				<tilt>0</tilt>
+				<range>148.7438570636752</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars0000</styleUrl>
+			<Point>
+				<coordinates>-97.75868123981067,28.1661143468401,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>VFW Pole .107</name>
+			<description>PMP450i 5GHz AP1 N - CC 107 (5.2)
+PMP450i 5GHz AP2 E - CC 108 (5.1)
+PMP450i 5GHz AP3 S - CC 109 (5.2)
+PMP450i 5GHz AP4 W - CC 110 (5.1)
+PMP450i 365 Omni - CC 107
+
+3 mile max range
+3617771400 AES</description>
+			<LookAt>
+				<longitude>-97.1814423614539</longitude>
+				<latitude>27.87415523239182</latitude>
+				<altitude>0</altitude>
+				<heading>0.3126868729811335</heading>
+				<tilt>0</tilt>
+				<range>52.61544610562829</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars00201</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.18150741683475,27.87417550424457,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Victoria Tower .166</name>
+			<description>Telrad 2.5GHz LTE - NE and SW
+
+PMP450i AP1 N - CC 166
+PMP450i AP2 E - CC 167
+PMP450i AP3 S - CC 168
+PMP450i AP4 W - CC 169
+
+10 mile max range
+
+3617771400 AES</description>
+			<LookAt>
+				<longitude>-97.03041252242389</longitude>
+				<latitude>28.79289209348886</latitude>
+				<altitude>0</altitude>
+				<heading>4.214512178911614e-05</heading>
+				<tilt>0</tilt>
+				<range>59.34686520588851</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars101200</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.03048497744504,28.79291071151806,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>West Orange Grove Hale Tower .139</name>
+			<description>PMP450m 365 AP1 N - CC 139 - 40MHz
+PMP450m 365 AP2 E - CC 140 - 40MHz
+PMP450m 365 AP3 S - CC 141 - 40MHz
+PMP450m 365 AP4 W - CC 142 - 40MHz</description>
+			<LookAt>
+				<longitude>-97.98510052578762</longitude>
+				<latitude>27.95525447167973</latitude>
+				<altitude>0</altitude>
+				<heading>-0.06271531993172408</heading>
+				<tilt>0</tilt>
+				<range>97.04852639591591</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars02</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.98513173368588,27.95523102035373,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>West Orange Grove Pole .118</name>
+			<description>PMP450i 5GHz Omni - CC 118 - 2 mile max range
+PMP450m 5GHz NW - CC 119 - 3 mile max range
+PMP450i 5GHz SE - CC 120 - 3 mile max range
+PMP450i 5GHz NE - CC 121 - 4 mile max range
+
+3617771400 / AES
+
+50ft telephone pole</description>
+			<LookAt>
+				<longitude>-97.9723971844265</longitude>
+				<latitude>27.98795220124576</latitude>
+				<altitude>0</altitude>
+				<heading>-0.04039174431524949</heading>
+				<tilt>0</tilt>
+				<range>59.89841342120759</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars00201</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.97263586474065,27.98792441183905,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>West Orange Grove Tower .52</name>
+			<description>PMP450i 3.65 AP1 N - CC52 (3660)
+PMP450m 3.65 AP2 E - CC53 (3690)
+PMP450m 3.65 AP3 S - CC54 (3660)
+PMP450m 3.65 AP4 W - CC55 (3690)
+
+PMP 450m 5g AP S - CC54 (5800)
+
+10 mile max range
+3617771400 AES</description>
+			<LookAt>
+				<longitude>-98.07825288808809</longitude>
+				<latitude>28.00987005377083</latitude>
+				<altitude>0</altitude>
+				<heading>-0.1063802495882396</heading>
+				<tilt>0</tilt>
+				<range>71.56197348313674</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars1301</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.07831737774225,28.00990667511996,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>West Sinton GE .248</name>
+			<description>PMP450i 5GHz AP1 N - CC 248
+PMP450i 5GHz AP2 E - CC 249
+PMP450i 5GHz AP3 S - CC 250
+PMP450i 5GHz AP4 W - CC251
+5 Mile Max</description>
+			<LookAt>
+				<longitude>-97.6876853272278</longitude>
+				<latitude>28.09119007440477</latitude>
+				<altitude>0</altitude>
+				<heading>-0.08422608724575656</heading>
+				<tilt>0</tilt>
+				<range>233.7243659674826</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars401</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.68847870252131,28.09088195856845,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Wilderness Tower .214</name>
+			<description>PMP450i 5GHz AP1 N - CC 214
+PMP450m 5GHz AP2 E - CC 215
+PMP450m 5GHz AP3 S - CC 216
+PMP450m 5GHz AP4 W - CC 217
+4 mile max
+
+PMP450m 5GHz SE - CC 215 (UNII-4) 6 mile max
+
+
+AES / 3617771400</description>
+			<LookAt>
+				<longitude>-97.86348883375454</longitude>
+				<latitude>28.05377604599391</latitude>
+				<altitude>0</altitude>
+				<heading>-0.3533970498269672</heading>
+				<tilt>0</tilt>
+				<range>82.51946025358177</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars02</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.86348079057643,28.05377200928771,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Woodsboro AT Relay</name>
+			<description>Backhaul relay only, no ap&apos;s.</description>
+			<LookAt>
+				<longitude>-97.33287856982126</longitude>
+				<latitude>28.16178191141215</latitude>
+				<altitude>0</altitude>
+				<heading>5.211894045470031e-05</heading>
+				<tilt>0</tilt>
+				<range>154.2323987028294</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars00</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.33301485349156,28.16185980556734,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Woodsboro GE .70</name>
+			<description>Tarana 5GHz BN E - Plan Id 1.15.0
+
+Tarana - 5GHz - 15Km  (9.3 miles)
+
+PMP450m 3.65 AP1 N - CC 70
+PMP450m 3.65 AP2 E - CC 71
+PMP450m 3.65 AP3 S - CC 72
+PMP450m 3.65 AP4 W - CC 73
+10 mile max range
+
+PMP450m 5GHz E - CC 71 - 40MHz
+6 mile max range
+
+3617771400 / AES</description>
+			<LookAt>
+				<longitude>-97.33423394849399</longitude>
+				<latitude>28.23557025908874</latitude>
+				<altitude>0</altitude>
+				<heading>-0.006737747851178352</heading>
+				<tilt>0</tilt>
+				<range>149.5479294648377</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-stars3</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.33428554753404,28.2355845827768,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Zamora Pole</name>
+			<description>NO AP&apos;s</description>
+			<LookAt>
+				<longitude>-97.77303492067239</longitude>
+				<latitude>27.62958481598346</latitude>
+				<altitude>0</altitude>
+				<heading>0.03407743658263124</heading>
+				<tilt>0</tilt>
+				<range>88.52121991541158</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_blu-stars00201</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.77322119326641,27.62958874520238,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
