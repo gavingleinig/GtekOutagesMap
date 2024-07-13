@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Tech Portal (add in editable portions) {% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<script>
+  function selectDeselectAll(checked) {
+      var checkboxes = document.getElementsByName('tower_status[]');
+      for (var i = 0; i < checkboxes.length; i++) {
+          checkboxes[i].checked = checked;
+      }
+  }
+
+  function submitForm() {
+            // Filter out towers whose status should not be updated to "offline"
+            var form = document.getElementById("techLoginForm");
+            var checkboxes = form.querySelectorAll('input[type="checkbox"]');
+            for (var i = 0; i < checkboxes.length; i++) {
+                if (!checkboxes[i].checked) {
+                    checkboxes[i].disabled = true; // Disable unchecked checkboxes
+                }
+            }
+            form.submit();
+        }
+</script>
+
+<h2>Tech Login</h2>
+<form id="techLoginForm" method="post" action="/tech">
+    <table>
+        <thead>
+            <tr>
+                <th>Tower Name</th>
+                <th>Status</th>
+                <th>Make Offline <input type="checkbox" onchange="selectDeselectAll(this.checked)"></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for tower in towers %}
+            <tr>
+                <td>{{ tower.name }}</td>
+                <td>{{ tower.status }}</td>
+                <td><input type="checkbox" name="tower_status[]" value="{{ tower.name }}"></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <button type="button" onclick="submitForm()">Submit</button>
+</form>
+{% endblock %}
