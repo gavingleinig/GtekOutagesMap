@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block header %}
-  <h1>{% block title %}Tech Portal (add in editable portions) {% endblock %}</h1>
+  <h1>{% block title %}Tech Portal{% endblock %}</h1>
 {% endblock %}
 
 {% block content %}
@@ -13,17 +13,19 @@
       }
   }
 
-  function submitForm() {
-            // Filter out towers whose status should not be updated to "offline"
-            var form = document.getElementById("techLoginForm");
-            var checkboxes = form.querySelectorAll('input[type="checkbox"]');
-            for (var i = 0; i < checkboxes.length; i++) {
-                if (!checkboxes[i].checked) {
-                    checkboxes[i].disabled = true; // Disable unchecked checkboxes
-                }
-            }
-            form.submit();
-        }
+  function submitForm(action) {
+      var form = document.getElementById("techLoginForm");
+      var actionInput = document.createElement("input");
+      actionInput.setAttribute("type", "hidden");
+      actionInput.setAttribute("name", "action");
+      actionInput.setAttribute("value", action);
+      form.appendChild(actionInput);
+
+      var checkboxes = form.querySelectorAll('input[name="tower_status[]"]:checked');
+      if (checkboxes.length > 0) {
+          form.submit();
+      }
+  }
 </script>
 
 <h2>Tech Login</h2>
@@ -31,21 +33,22 @@
     <table>
         <thead>
             <tr>
+                <th><input type="checkbox" onclick="selectDeselectAll(this.checked)"></th>
                 <th>Tower Name</th>
                 <th>Status</th>
-                <th>Make Offline <input type="checkbox" onchange="selectDeselectAll(this.checked)"></th>
             </tr>
         </thead>
         <tbody>
             {% for tower in towers %}
             <tr>
+                <td><input type="checkbox" name="tower_status[]" value="{{ tower.name }}"></td>
                 <td>{{ tower.name }}</td>
                 <td>{{ tower.status }}</td>
-                <td><input type="checkbox" name="tower_status[]" value="{{ tower.name }}"></td>
             </tr>
             {% endfor %}
         </tbody>
     </table>
-    <button type="button" onclick="submitForm()">Submit</button>
+    <button type="button" onclick="submitForm('online')">Make Online</button>
+    <button type="button" onclick="submitForm('offline')">Make Offline</button>
 </form>
 {% endblock %}

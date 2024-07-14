@@ -11,39 +11,25 @@ bp = Blueprint('tech', __name__)
 @bp.route('/tech', methods=('GET', 'POST'))
 @login_required
 def tech():
-
     db = get_db()
-    towers = db.execute(
-        'SELECT name, status FROM towers'
-    ).fetchall()
-
+    towers = db.execute('SELECT name, status FROM towers').fetchall()
 
     if request.method == 'POST':
-
-        try:
-            db.execute(
-                "UPDATE towers SET status = 'Online';"
-            )
-            db.commit()
-        except db.IntegrityError:
-            flash(error)
-
+        action = request.form.get('action')
         selected_towers = request.form.getlist('tower_status[]')
-        towers_to_update = [tower for tower in towers if tower['name'] in selected_towers]
-        
-        for tower in towers_to_update:
-            try:
-                db.execute(
-                    "UPDATE towers SET status = 'Offline' WHERE name = ?;",
-                    (tower['name'],)
-                )
-                db.commit()
-            except db.IntegrityError:
-                flash(error)
-        
-        towers = db.execute(
-        'SELECT name, status FROM towers'
-        ).fetchall()
 
-    
+        if action and selected_towers:
+            for tower_name in selected_towers:
+                new_status = 'Online' if action == 'online' else 'Offline'
+                try:
+                    db.execute(
+                        "UPDATE towers SET status = ? WHERE name = ?;",
+                        (new_status, tower_name)
+                    )
+                    db.commit()
+                except db.IntegrityError:
+                    flash("An error occurred while updating the tower status.")
+
+        towers = db.execute('SELECT name, status FROM towers').fetchall()
+
     return render_template('tech.html', towers=towers)
