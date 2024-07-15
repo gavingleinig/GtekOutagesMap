@@ -1,28 +1,61 @@
 <!doctype html>
-<title>{% block title %}{% endblock %} - Flaskr</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-<nav>
-  <h1>Gtek Outage Map</h1>
-  <ul>
-    {% if g.user %}
-      <li>Tech Logged In
-      <li><a href="{{ url_for('tech.tech') }}">Update Outage Towers</a>
-      <li><a href="{{ url_for('status.status') }}">Update Status</a>
-      <li><a href="{{ url_for('auth.logout') }}">Log Out</a>
-    {% else %}
-      <li><a href="{{ url_for('status.status') }}">See Status</a>
-      <li><a href="{{ url_for('auth.login') }}">Tech Log In</a>
-    {% endif %}
-  </ul>
-</nav>
-<section class="content">
-  <header>
-    {% block header %}{% endblock %}
-  </header>
-  {% for message in get_flashed_messages() %}
-    <div class="flash">{{ message }}</div>
-  {% endfor %}
-  {% block content %}{% endblock %}
-</section>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>{% block title %}{% endblock %} - Gtek</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Gtek Outage Info</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('outage_map.map') }}">View Outage Map</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        {% if g.user %}
+          <li class="nav-item">Tech Logged In</li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('tech.tech') }}">Update Outage Map Towers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('status.status') }}">Incident History</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('auth.logout') }}">Log Out</a>
+          </li>
+        {% else %}
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('status.status') }}">Incident History</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('auth.login') }}">Tech</a>
+          </li>
+        {% endif %}
+      </ul>
+    </div>
+  </nav>
+  
+  <section class="content">
+    <header>
+      {% block header %}{% endblock %}
+    </header>
+    {% for message in get_flashed_messages() %}
+      <div class="flash">{{ message }}</div>
+    {% endfor %}
+    {% block content %}{% endblock %}
+  </section>
 
-{% block script %}{% endblock %}
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  {% block script %}{% endblock %}
+</body>
+</html>

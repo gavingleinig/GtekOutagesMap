@@ -6,6 +6,7 @@
 
 {% block content %}
   <form method="post">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
     <label for="title">Title</label>
     <input name="title" id="title"
       value="{{ request.form['title'] or post['title'] }}" required>
@@ -23,9 +24,7 @@
         <div class="update">
           <label for="update_body_{{ update['update_id'] }}">Update Text</label>
           <textarea name="update_body_{{ update['update_id'] }}" id="update_body_{{ update['update_id'] }}">{{ request.form['update_body_' ~ update['update_id']] or update['update_content'] }}</textarea>
-          <form method="post" action="{{ url_for('status.delete_update', id=post['id'], update_id=update['update_id']) }}">
-            <input class="danger" type="submit" value="Delete Update" onclick="return confirm('Are you sure you want to delete this update?');">
-          </form>
+          <button type="button" class="delete-update-btn" data-update-id="{{ update['update_id'] }}">Delete</button>
         </div>
       {% endfor %}
     {% endif %}
@@ -46,6 +45,36 @@
 
   <hr>
   <form action="{{ url_for('status.delete', id=post['id']) }}" method="post">
-    <input class="danger" type="submit" value="Delete Post" onclick="return confirm('Are you sure you want to delete this post?');">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+    <input class="danger" type="submit" value="Delete" onclick="return confirm('Are you sure?');">
   </form>
+{% endblock %}
+
+{% block script %}
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.delete-update-btn').forEach(button => {
+        button.addEventListener('click', function() {
+          const updateId = this.dataset.updateId;
+          const postId = {{ post['id'] }};
+          if (confirm('Are you sure you want to delete this update?')) {
+            fetch(`/${postId}/update/${updateId}`, {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                'X-CSRFToken': '{{ csrf_token() }}'  // Ensure you have CSRF protection
+              },
+              body: JSON.stringify({ _method: 'DELETE' })
+            }).then(response => {
+              if (response.ok) {
+                location.reload();
+              } else {
+                alert('Failed to delete the update.');
+              }
+            });
+          }
+        });
+      });
+    });
+  </script>
 {% endblock %}

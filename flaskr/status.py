@@ -169,14 +169,6 @@ def edit(id):
                     # Optionally handle validation or flash message for empty update
                     pass
 
-                # Handle update deletions
-                for update in post['updates']:
-                    if 'delete_update_' + str(update['update_id']) in request.form:
-                        db.execute(
-                            'DELETE FROM post_updates WHERE id = ?',
-                            (update['update_id'],)
-                        )
-
             # Handle existing updates
             for update in post['updates']:
                 update_id = update['update_id']
@@ -197,17 +189,15 @@ def edit(id):
 @login_required
 def delete(id):
     get_post(id)
-    print("I tried?v1\n\n\n\n\n")
     db = get_db()
     db.execute('DELETE FROM posts WHERE id = ?', (id,))
     db.commit()
     return redirect(url_for('status.status'))
 
-@bp.route('/<int:id>/update/<int:update_id>', methods=('POST',))
+@bp.route('/<int:post_id>/update/<int:update_id>', methods=['POST'])
 @login_required
-def delete_update(id, update_id):
-    get_post(id)
+def delete_update(post_id, update_id):
     db = get_db()
-    db.execute('DELETE FROM post_updates WHERE update_id = ?', (update_id,))
+    db.execute('DELETE FROM post_updates WHERE id = ? AND post_id = ?', (update_id, post_id))
     db.commit()
-    return ('', 204)  # Return an empty response with status code 204 (No Content)
+    return '', 204  # No Content

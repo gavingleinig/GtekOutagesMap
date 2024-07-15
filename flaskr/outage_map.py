@@ -65,9 +65,11 @@ def find_outage():
                 break
     
     if an_offline_tower:
-        message = f"An Offline Tower is in Radius: {an_offline_tower['name']}, Distance: {(an_offline_tower['distance']/1609.34):.2f} miles"
+        message = f"""An Offline Tower is in Radius: {an_offline_tower['name']}, Distance: {(an_offline_tower['distance']/1609.34):.2f} miles
+        You appear to be in a Gtek Outage. We are doing our best to quickly return you to service.
+        """
     else:
-        message = "All systems are good to go."
+        message = "There is currently no reported outage in your location. Try troubleshooting on your own [insert troubleshooting tips], or contact us at 361-777-1400."
 
     return jsonify({"message": message, "markerPosition": location})
 

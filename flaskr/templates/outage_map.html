@@ -1,31 +1,29 @@
 {% extends 'base.html' %}
 
 {% block header %}
-  <h1>{% block title %}Outage Finder{% endblock %}</h1>
+  <h1>{% block title %}Outage Map{% endblock %}</h1>
 {% endblock %}
 
 {% block content %}
-  <head>
-    <title data='{{towers}}'>Google Maps Outages</title>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZuq4Bjk6RTomkv9lA9isb8o0nPXBPV6w&libraries=places,geometry"></script>
-    <style>
-        #map {
-            height: 500px;
-            width: 100%;
-        }
-    </style>
-  </head>
+  <meta name="csrf-token" content="{{ csrf_token() }}">
+  <style>
+    body {
+      padding: 0 30px; 
+    }
+    #map {
+      height: 600px; 
+      width: 100%;
+    }
+  </style>
 
-  <body>
-    <input id="address" type="text" placeholder="Enter address">
-    <button onclick="findIfOutage()">Find Outages</button>
-    <div id="map"></div>
-    <div id="nearest-point"></div>
-
-    
-  </body>
+  <p>Enter your full address to search for potential outages in your area that may be affecting you.</p>
+  <input id="autocomplete" type="text" placeholder="Enter address">
+  <button onclick="findIfOutage()">Find Outages</button>
+  <div id="map"></div>
+  <div id="nearest-point"></div>
 {% endblock %}
 
 {% block script %}
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZuq4Bjk6RTomkv9lA9isb8o0nPXBPV6w&libraries=places,geometry"></script>
 <script src="{{ url_for('static', filename='outage_map.js') }}"></script>
 {% endblock %}
