@@ -9,7 +9,7 @@ from flaskr.db import get_db
 bp = Blueprint('outage_map', __name__)
 
 @bp.route('/')
-def index():
+def map():
     return render_template('outage_map.html')
 
 @bp.route('/data')
@@ -87,3 +87,4 @@ def haversine_distance(loc1, loc2):
 
     distance = R * c * 1000  # Convert to meters
     return distance
+

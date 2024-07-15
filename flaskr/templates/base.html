@@ -5,9 +5,12 @@
   <h1>Gtek Outage Map</h1>
   <ul>
     {% if g.user %}
-      <li><span>{{ g.user['username'] }}</span>
+      <li>Tech Logged In
+      <li><a href="{{ url_for('tech.tech') }}">Update Outage Towers</a>
+      <li><a href="{{ url_for('status.status') }}">Update Status</a>
       <li><a href="{{ url_for('auth.logout') }}">Log Out</a>
     {% else %}
+      <li><a href="{{ url_for('status.status') }}">See Status</a>
       <li><a href="{{ url_for('auth.login') }}">Tech Log In</a>
     {% endif %}
   </ul>

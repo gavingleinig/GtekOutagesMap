@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Gtek Service Status{% endblock %}</h1>
+  {% if g.user %}
+    <a class="action" href="{{ url_for('status.create') }}">Create New Post</a>
+  {% endif %}
+{% endblock %}
+
+{% block content %}
+  {% for post in posts %}
+    <article class="post">
+      <header>
+        <div>
+          <h1>{{ post['title'] }}</h1>
+          <div class="about">Status: {{ post['status'] }} | Start Date: {{ post['created'] }}</div>
+        </div>
+      </header>
+      <p class="body">{{ post['body'] }}</p>
+      
+      <!-- Display updates if there are any -->
+      {% if post['updates'] %}
+        <ul class="updates">
+          {% for update in post['updates'] %}
+            <li>
+              <strong>Update {{ loop.index }}:</strong>
+              <p>{{ update['update_content'] }}</p>
+              <div class="about">Updated at {{ update['updated_at'] }}</div>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+      
+      {% if g.user %}
+          <a class="action" href="{{ url_for('status.edit', id=post['id'], do_update='false') }}">Edit</a>
+          <a class="action" href="{{ url_for('status.edit', id=post['id'], do_update='true') }}">Create Update</a>
+      {% endif %}
+
+    </article>
+    {% if not loop.last %}
+      <hr>
+    {% endif %}
+  {% endfor %}
+{% endblock %}
