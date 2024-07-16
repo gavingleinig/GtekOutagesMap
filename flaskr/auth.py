@@ -1,33 +1,32 @@
 import functools
-
+import json
+import os
 from flask import (
     Blueprint, flash, g, redirect, render_template, request, session, url_for
 )
-from werkzeug.security import check_password_hash, generate_password_hash
-
-from flaskr.db import get_db
+from werkzeug.security import check_password_hash
 
 bp = Blueprint('auth', __name__)
+
+# Load credentials from file
+def load_credentials():
+    with open(os.getenv('CREDENTIALS_FILE', 'credentials.json')) as f:
+        return json.load(f)
+
+credentials = load_credentials()
 
 @bp.route('/login', methods=('GET', 'POST'))
 def login():
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
-        #db = get_db()
         error = None
-        #user = db.execute(
-        #    'SELECT * FROM user WHERE username = ?', (username,)
-        #).fetchone()
 
-        #if user is None:
-        #    error = 'Incorrect username.'
-        #elif not check_password_hash(user['password'], password):
-        #    error = 'Incorrect password.'
+        user = credentials.get(username)
 
-        if username != "admin":
+        if user is None:
             error = 'Incorrect username.'
-        elif password != "4meonly":
+        elif not check_password_hash(user['password'], password):
             error = 'Incorrect password.'
 
         if error is None:
@@ -56,7 +55,7 @@ def logout():
 def login_required(view):
     @functools.wraps(view)
     def wrapped_view(**kwargs):
-        if not session or session['logged_in'] != True:
+        if not session or session.get('logged_in') != True:
             return redirect(url_for('auth.login'))
 
         return view(**kwargs)

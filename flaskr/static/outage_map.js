@@ -1,6 +1,5 @@
 let map;
-let geocoder;
-var csrf_token = "{{ csrf_token() }}";
+let marker;
 
 document.addEventListener("DOMContentLoaded", async function () {
     await initMap();
@@ -21,19 +20,25 @@ async function initMap() {
         rotateControl: false,
         mapTypeId: 'terrain'
     });
-    geocoder = new google.maps.Geocoder();
+    marker = new google.maps.Marker({
+        map,
+        anchorPoint: new google.maps.Point(28, -97.68),
+    });
+    marker.setVisible(false);
 }
 
 async function initAutocomplete() {
-    const autocomplete = new google.maps.places.Autocomplete(document.getElementById('autocomplete'), {});
-    autocomplete.addListener('place_changed', function() {
-        const place = autocomplete.getPlace();
-        if (!place.geometry) {
-            window.alert("Autocomplete's returned place contains no geometry");
-            return;
-        }
-        console.log("Selected Address:", place.formatted_address);
-    });
+    const defaultBounds = {
+        north: 29.975,
+        south: 26.925,
+        east: -96.125,
+        west: -98.925,
+    };
+    const options = {
+        bounds: defaultBounds,
+        componentRestrictions: { country: "us" },
+        strictBounds: false,
+    };
 }
 
 async function findIfOutage() {
@@ -43,14 +48,17 @@ async function findIfOutage() {
 
     const autocomplete = new google.maps.places.Autocomplete(autocompleteInput, {});
 
-    google.maps.event.addListener(autocomplete, 'place_changed', async function() {
+    google.maps.event.addListener(autocomplete, 'place_changed', async function () {
         const place = autocomplete.getPlace();
         if (!place || !place.place_id) {
             nearestPointElement.innerText = "Please select a valid place from the suggestions.";
             return;
         }
-
-        console.log(place.place_id)
+        
+        map.setCenter(place.geometry.location);
+        map.setZoom(14);
+        marker.setPosition(place.geometry.location);
+        marker.setVisible(true);
 
         try {
             const response = await fetch('/find_outage', {

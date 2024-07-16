@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block header %}
-  <h1>{% block title %}Outage Map{% endblock %}</h1>
+  <h1 class="text-center">{% block title %}Outage Map{% endblock %}</h1>
 {% endblock %}
 
 {% block content %}
@@ -14,11 +14,24 @@
       height: 600px; 
       width: 100%;
     }
+    .center-container {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
   </style>
 
-  <p>Enter your full address to search for potential outages in your area that may be affecting you.</p>
-  <input id="autocomplete" type="text" placeholder="Enter address">
-  <button onclick="findIfOutage()">Find Outages</button>
+  <p class="text-center">Enter your full address to search for potential outages in your area that may be affecting you.</p>
+  <div class="container center-container">
+    <div class="row justify-content-center">
+      <div class="col-md-15">
+          <input id="autocomplete" type="text" class="form-control" placeholder="Enter address">
+          <!-- <button onclick="findIfOutage()">Find Outages</button> -->
+      </div>
+    </div>
+  </div>
+  
   <div id="map"></div>
   <div id="nearest-point"></div>
 {% endblock %}
