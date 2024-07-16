@@ -12,6 +12,8 @@ bp = Blueprint('outage_map', __name__)
 def map():
     return render_template('outage_map.html')
 
+
+#don't think below route is being used anymore -- remove?
 @bp.route('/data')
 def data():
     db = get_db()
@@ -29,17 +31,17 @@ def data():
 @bp.route('/find_outage', methods=['POST'])
 def find_outage():
     data = request.get_json()
-    if not data or 'address' not in data:
-        return jsonify({"message": "Invalid request, address is required."}), 400
+    if not data or 'placeId' not in data:
+        return jsonify({"message": "Invalid request, placeId is required."}), 400
 
-    address = data['address']
+    place_id = data['placeId']
     
-    # Get latitude and longitude of the address
-    geocode_url = f'https://maps.googleapis.com/maps/api/geocode/json?address={address}&key=AIzaSyCZuq4Bjk6RTomkv9lA9isb8o0nPXBPV6w'
+    # Get latitude and longitude of the placeId
+    geocode_url = f'https://maps.googleapis.com/maps/api/geocode/json?place_id={place_id}&key=AIzaSyCZuq4Bjk6RTomkv9lA9isb8o0nPXBPV6w'
     geocode_response = requests.get(geocode_url).json()
     
     if geocode_response['status'] != 'OK':
-        return jsonify({"message": "Error geocoding address."}), 400
+        return jsonify({"message": "Error geocoding placeId."}), 400
     
     location = geocode_response['results'][0]['geometry']['location']
     address_lat_lng = (location['lat'], location['lng'])
@@ -65,7 +67,7 @@ def find_outage():
                 break
     
     if an_offline_tower:
-        message = f"""An Offline Tower is in Radius: {an_offline_tower['name']}, Distance: {(an_offline_tower['distance']/1609.34):.2f} miles
+        message = f"""An Offline Tower is in Radius: {an_offline_tower['name']}, Distance: {(an_offline_tower['distance']/1609.34):.2f} miles.
         You appear to be in a Gtek Outage. We are doing our best to quickly return you to service.
         """
     else:
@@ -89,4 +91,3 @@ def haversine_distance(loc1, loc2):
 
     distance = R * c * 1000  # Convert to meters
     return distance
-
