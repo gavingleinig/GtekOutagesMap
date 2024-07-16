@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1 class="text-center">{% block title %}Edit Towers{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <div class="container mt-5">
+    <form method="POST">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Latitude</th>
+            <th scope="col">Longitude</th>
+            <th scope="col">Service Radius</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for tower in towers %}
+          <tr>
+            <td>
+              <input type="text" class="form-control" name="name_{{ loop.index }}" id="name_{{ loop.index }}" value="{{ request.form['name_' ~ loop.index] or tower['name'] }}" required>
+            </td>
+            <td>
+              <input type="text" class="form-control" name="latitude_{{ loop.index }}" id="latitude_{{ loop.index }}" value="{{ request.form['latitude_' ~ loop.index] or tower['latitude'] }}" required>
+            </td>
+            <td>
+              <input type="text" class="form-control" name="longitude_{{ loop.index }}" id="longitude_{{ loop.index }}" value="{{ request.form['longitude_' ~ loop.index] or tower['longitude'] }}" required>
+            </td>
+            <td>
+              <input type="text" class="form-control" name="radius_{{ loop.index }}" id="radius_{{ loop.index }}" value="{{ request.form['radius_' ~ loop.index] or tower['radius'] }}" required>
+            </td>
+            <td>
+              <form method="POST" action="{{ url_for('tech.delete', id=tower['id']) }}" style="display:inline;">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                <button type="submit" class="btn btn-secondary">Delete</button>
+              </form>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      <button type="submit" class="btn btn-primary">Save Changes</button>
+    </form>
+  </div>
+{% endblock %}
