@@ -33,3 +33,45 @@ def tech():
         towers = db.execute('SELECT name, status FROM towers').fetchall()
 
     return render_template('tech.html', towers=towers)
+
+
+
+@bp.route('/tech/edit_towers', methods=('GET', 'POST'))
+@login_required
+def edit_towers():
+    if request.method == 'POST':
+        # Process form data
+        towers = []
+        for i in range(1, len(request.form) // 4 + 1):
+            tower_data = {
+                'name': request.form.get(f'name_{i}'),
+                'latitude': request.form.get(f'latitude_{i}'),
+                'longitude': request.form.get(f'longitude_{i}'),
+                'radius': request.form.get(f'radius_{i}')
+            }
+            towers.append(tower_data)
+        
+        # Perform the update operation in your database
+        for tower in towers:
+            # Assuming you have a function to update tower data
+            update_tower(tower)
+        
+        flash('Towers updated successfully!', 'success')
+        return redirect(url_for('tech.edit_towers'))
+    
+    db = get_db()
+    towers = db.execute('SELECT id, name, latitude, longitude, radius FROM towers').fetchall()
+    
+    return render_template('edit_towers.html', towers=towers)
+
+def update_tower(tower):
+    # Replace with your logic to update a tower in the database
+    pass
+
+@bp.route('/tech/<int:id>/delete', methods=('POST',))
+@login_required
+def delete(id):
+    db = get_db()
+    db.execute('DELETE FROM towers WHERE id = ?', (id,))
+    db.commit()
+    return redirect(url_for('tech.edit_towers'))

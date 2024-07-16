@@ -18,7 +18,8 @@ async function initMap() {
         scaleControl: true,
         streetViewControl: false,
         rotateControl: false,
-        mapTypeId: 'terrain'
+        mapTypeId: 'terrain',
+        gestureHandling: "greedy"
     });
     marker = new google.maps.Marker({
         map,

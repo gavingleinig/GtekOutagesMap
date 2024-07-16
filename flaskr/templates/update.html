@@ -1,30 +1,39 @@
 {% extends 'base.html' %}
 
 {% block header %}
-  <h1>{% block title %}Edit "{{ post['title'] }}"{% endblock %}</h1>
+  <h1 class="my-4">{% block title %}Edit "{{ post['title'] }}"{% endblock %}</h1>
 {% endblock %}
 
 {% block content %}
-  <form method="post">
+  <form method="post" class="mb-4">
     <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
-    <label for="title">Title</label>
-    <input name="title" id="title"
-      value="{{ request.form['title'] or post['title'] }}" required>
-    <label for="body">Body</label>
-    <textarea name="body" id="body">{{ request.form['body'] or post['body'] }}</textarea>
-    <select name="status" id="status" required>
-      <option value="investigating" {% if (request.form['status'] or post['status']) == 'investigating' %}selected{% endif %}>Investigating</option>
-      <option value="resolved" {% if (request.form['status'] or post['status']) == 'resolved' %}selected{% endif %}>Resolved</option>
-    </select>
+    
+    <div class="mb-3">
+      <label for="title" class="form-label">Title</label>
+      <input type="text" class="form-control" name="title" id="title" value="{{ request.form['title'] or post['title'] }}" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="body" class="form-label">Body</label>
+      <textarea class="form-control" name="body" id="body" rows="3" required>{{ request.form['body'] or post['body'] }}</textarea>
+    </div>
+
+    <div class="mb-3">
+      <label for="status" class="form-label">Status</label>
+      <select class="form-select" name="status" id="status" required>
+        <option value="investigating" {% if (request.form['status'] or post['status']) == 'investigating' %}selected{% endif %}>Investigating</option>
+        <option value="resolved" {% if (request.form['status'] or post['status']) == 'resolved' %}selected{% endif %}>Resolved</option>
+      </select>
+    </div>
 
     {% if post['updates'] %}
       <hr>
       <h2>Updates</h2>
       {% for update in post['updates'] %}
-        <div class="update">
-          <label for="update_body_{{ update['update_id'] }}">Update Text</label>
-          <textarea name="update_body_{{ update['update_id'] }}" id="update_body_{{ update['update_id'] }}">{{ request.form['update_body_' ~ update['update_id']] or update['update_content'] }}</textarea>
-          <button type="button" class="delete-update-btn" data-update-id="{{ update['update_id'] }}">Delete</button>
+        <div class="mb-3">
+          <label for="update_body_{{ update['update_id'] }}" class="form-label">Update {{  loop.revindex }}:</label>
+          <textarea class="form-control" name="update_body_{{ update['update_id'] }}" id="update_body_{{ update['update_id'] }}" rows="2" required>{{ request.form['update_body_' ~ update['update_id']] or update['update_content'] }}</textarea>
+          <button type="button" class="btn btn-danger mt-2 delete-update-btn" data-update-id="{{ update['update_id'] }}">Delete</button>
         </div>
       {% endfor %}
     {% endif %}
@@ -32,21 +41,23 @@
     {% if do_update %}
       <hr>
       <h2>Add New Update</h2>
-      <label for="new_update_body">Update Text</label>
-      <textarea name="new_update_body" id="new_update_body">{{ request.form['new_update_body'] }}</textarea>
+      <div class="mb-3">
+        <label for="new_update_body" class="form-label">Update Text</label>
+        <textarea class="form-control" name="new_update_body" id="new_update_body" rows="2">{{ request.form['new_update_body'] }}</textarea>
+      </div>
     {% endif %}
 
-    <input type="submit" value="Save">
+    <button type="submit" class="btn btn-primary">Save</button>
   </form>
 
   {% if not do_update %}
-    <a class="action" href="{{ url_for('status.edit', id=post['id'], do_update='true') }}">Add Update</a>
+    <a class="btn btn-secondary mb-4" href="{{ url_for('status.edit', id=post['id'], do_update='true') }}">Add Update</a>
   {% endif %}
 
   <hr>
   <form action="{{ url_for('status.delete', id=post['id']) }}" method="post">
     <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
-    <input class="danger" type="submit" value="Delete" onclick="return confirm('Are you sure?');">
+    <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure?');">Delete Post</button>
   </form>
 {% endblock %}
 

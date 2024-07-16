@@ -11,8 +11,8 @@
       padding: 0 30px; 
     }
     #map {
-      height: 600px; 
-      width: 100%;
+      height: 500px; 
+      width: 80%;
     }
     .center-container {
             height: 100%;
@@ -23,20 +23,41 @@
   </style>
 
   <p class="text-center">Enter your full address to search for potential outages in your area that may be affecting you.</p>
-  <div class="container center-container">
+  <div class="container center-container mb-4">
     <div class="row justify-content-center">
-      <div class="col-md-15">
+      <div class="col-md-20">
           <input id="autocomplete" type="text" class="form-control" placeholder="Enter address">
           <!-- <button onclick="findIfOutage()">Find Outages</button> -->
       </div>
     </div>
   </div>
   
-  <div id="map"></div>
+  <div id="map" class="container px-3"></div>
   <div id="nearest-point"></div>
+
+  <section class="faq my-5">
+    <div class="container">
+      <h2>FAQ</h2>
+      <div class="card">
+        <div class="card-header">
+          No outage reported?
+        </div>
+        <div class="card-body">
+          <p>If there are no outages reported in your area, follow these simple steps to troubleshoot a variety of internet connection issues:</p>
+          <ul>
+            <li><strong>Check your internet cables:</strong> Verify that all cables are securely connected to your router and in good shape. Loose or damaged cables can disrupt your internet connection.</li>
+            <li><strong>Restart your router:</strong> Find complete steps <a href="#">here</a>.</li>
+            <li><strong>If the issue persists,</strong> please contact our service agents at 361-777-1400</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
 {% endblock %}
 
 {% block script %}
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZuq4Bjk6RTomkv9lA9isb8o0nPXBPV6w&libraries=places,geometry"></script>
 <script src="{{ url_for('static', filename='outage_map.js') }}"></script>
 {% endblock %}
+

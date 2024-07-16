@@ -6,14 +6,19 @@ from flask import (
 )
 from werkzeug.security import check_password_hash
 
+
+
+
 bp = Blueprint('auth', __name__)
+
+
 
 # Load credentials from file
 def load_credentials():
     with open(os.getenv('CREDENTIALS_FILE', 'credentials.json')) as f:
         return json.load(f)
 
-credentials = load_credentials()
+
 
 @bp.route('/login', methods=('GET', 'POST'))
 def login():
@@ -22,6 +27,7 @@ def login():
         password = request.form['password']
         error = None
 
+        credentials = load_credentials()
         user = credentials.get(username)
 
         if user is None:
