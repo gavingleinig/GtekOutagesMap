@@ -6,43 +6,107 @@
 
 {% block content %}
   <div class="container mt-5">
-    <form method="POST">
-      <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th scope="col">Name</th>
-            <th scope="col">Latitude</th>
-            <th scope="col">Longitude</th>
-            <th scope="col">Service Radius</th>
-            <th scope="col">Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for tower in towers %}
-          <tr>
-            <td>
-              <input type="text" class="form-control" name="name_{{ loop.index }}" id="name_{{ loop.index }}" value="{{ request.form['name_' ~ loop.index] or tower['name'] }}" required>
-            </td>
-            <td>
-              <input type="text" class="form-control" name="latitude_{{ loop.index }}" id="latitude_{{ loop.index }}" value="{{ request.form['latitude_' ~ loop.index] or tower['latitude'] }}" required>
-            </td>
-            <td>
-              <input type="text" class="form-control" name="longitude_{{ loop.index }}" id="longitude_{{ loop.index }}" value="{{ request.form['longitude_' ~ loop.index] or tower['longitude'] }}" required>
-            </td>
-            <td>
-              <input type="text" class="form-control" name="radius_{{ loop.index }}" id="radius_{{ loop.index }}" value="{{ request.form['radius_' ~ loop.index] or tower['radius'] }}" required>
-            </td>
-            <td>
-              <form method="POST" action="{{ url_for('tech.delete', id=tower['id']) }}" style="display:inline;">
-                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
-                <button type="submit" class="btn btn-secondary">Delete</button>
-              </form>
-            </td>
-          </tr>
-          {% endfor %}
-        </tbody>
-      </table>
-      <button type="submit" class="btn btn-primary">Save Changes</button>
+    <table class="table table-bordered table-sm" id="towers-table">
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Latitude</th>
+          <th scope="col">Longitude</th>
+          <th scope="col">Service Radius (Mi)</th>
+          <th scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for tower in towers %}
+        <tr>
+          <td>
+            <input type="hidden" name="id_{{ loop.index }}" id="id_{{ loop.index }}" value="{{ tower['id'] }}">
+            <input type="text" class="form-control" name="name_{{ loop.index }}" id="name_{{ loop.index }}" value="{{ tower['name'] }}" required>
+          </td>
+          <td>
+            <input type="text" class="form-control" name="latitude_{{ loop.index }}" id="latitude_{{ loop.index }}" value="{{ tower['latitude'] }}" required>
+          </td>
+          <td>
+            <input type="text" class="form-control" name="longitude_{{ loop.index }}" id="longitude_{{ loop.index }}" value="{{ tower['longitude'] }}" required>
+          </td>
+          <td>
+            <input type="text" class="form-control" name="radius_{{ loop.index }}" id="radius_{{ loop.index }}" value="{{ tower['radius'] }}" required>
+          </td>
+          <td>
+            <form method="POST" action="{{ url_for('tech.delete', id=tower['id']) }}" style="display:inline;">
+              <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+              <button type="submit" class="btn btn-secondary">Delete</button>
+            </form>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <button type="button" class="btn btn-primary" id="save-changes-btn">Save Changes</button>
+
+    <h3 class="mt-5">Add New Tower</h3>
+    <form method="POST" action="{{ url_for('tech.add_tower') }}">
+      <div class="form-group">
+        <label for="new_name">Name</label>
+        <input type="text" class="form-control" id="new_name" name="new_name" required pattern="^[a-zA-Z0-9\s]+$" title="Name should contain only letters, numbers, and spaces.">
+      </div>
+      <div class="form-group">
+        <label for="new_latitude">Latitude</label>
+        <input type="text" class="form-control" id="new_latitude" name="new_latitude" required pattern="^-?\d+(\.\d+)?$" title="Latitude should be a valid number.">
+      </div>
+      <div class="form-group">
+        <label for="new_longitude">Longitude</label>
+        <input type="text" class="form-control" id="new_longitude" name="new_longitude" required pattern="^-?\d+(\.\d+)?$" title="Longitude should be a valid number.">
+      </div>
+      <div class="form-group">
+        <label for="new_radius">Service Radius (Mi)</label>
+        <input type="text" class="form-control" id="new_radius" name="new_radius" required pattern="^\d+(\.\d+)?$" title="Radius should be a valid number.">
+      </div>
+      <button type="submit" class="btn btn-success">Add Tower</button>
     </form>
   </div>
+
+  <script>
+    document.getElementById('save-changes-btn').addEventListener('click', function() {
+      let tableRows = document.querySelectorAll('#towers-table tbody tr');
+      let towers = [];
+
+      tableRows.forEach(function(row, index) {
+        let id = document.getElementById(`id_${index + 1}`).value;
+        let name = document.getElementById(`name_${index + 1}`).value;
+        let latitude = document.getElementById(`latitude_${index + 1}`).value;
+        let longitude = document.getElementById(`longitude_${index + 1}`).value;
+        let radius = document.getElementById(`radius_${index + 1}`).value;
+
+        if (name && latitude && longitude && radius) {
+          towers.push({id, name, latitude, longitude, radius});
+        } else {
+          alert('All fields are required.');
+          return;
+        }
+
+        if (isNaN(latitude) || isNaN(longitude) || isNaN(radius)) {
+          alert('Latitude, Longitude, and Radius must be valid numbers.');
+          return;
+        }
+      });
+
+      fetch('{{ url_for("tech.edit_towers") }}', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-CSRFToken': '{{ csrf_token() }}'
+        },
+        body: JSON.stringify({towers})
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.success) {
+          location.reload();
+        } else {
+          alert(data.message);
+        }
+      });
+    });
+  </script>
 {% endblock %}

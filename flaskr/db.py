@@ -29,7 +29,7 @@ def init_db():
         db.executescript(f.read().decode('utf8'))
     
     insert_statements = ""
-    with open('flaskr/towers.csv', 'r') as csvfile:
+    with open('flaskr/util/towers.csv', 'r') as csvfile:
         csvreader = csv.DictReader(csvfile)
         
         for row in csvreader:

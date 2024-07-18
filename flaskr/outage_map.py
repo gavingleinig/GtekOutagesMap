@@ -72,7 +72,7 @@ def find_outage():
         or smthn like "Rest assured, our technicians are working hard to get all services back up and running as soon as possible. You don't need to request a repair if you confirm that you're in an area outage."
         """
     else:
-        message = "There is currently no reported outage in your location. Try troubleshooting on your own [insert troubleshooting tips], or contact us at 361-777-1400."
+        message = "We aren't aware of any issues at your location. Try troubleshooting on your own [insert troubleshooting tips], or contact us at 361-777-1400."
 
     return jsonify({"message": message, "markerPosition": location})
 

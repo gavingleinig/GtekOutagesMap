@@ -6,52 +6,60 @@
   <title>{% block title %}{% endblock %} - Gtek</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+  <style>
+    .jumbotron {
+      background: url("{{ url_for('static', filename='marina-high-rise-grade-1024x360.jpg') }}") no-repeat center center;
+      background-size: cover;
+      color: white;
+    }
+  </style>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Gtek Outage Info</a>
+    <a class="navbar-brand" href="#">
+      <img src="{{ url_for('static', filename='logo-GENERAL.svg') }}" width="90" height="30" class="d-inline-block align-top" alt="">
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('outage_map.map') }}">View Outage Map</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('status.status') }}">Incident History</a>
-        </li>
-      </ul>
-      <ul class="navbar-nav">
+      <div class="navbar-nav mr-auto">
+        <a class="nav-item nav-link" href="{{ url_for('outage_map.map') }}">View Outage Map</a>
+        <a class="nav-item nav-link" href="{{ url_for('status.status') }}">Incident History</a>
+      </div>
+      <div class="navbar-nav">
         {% if g.user %}
-          <li class="nav-item">(Tech Logged In)</li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('tech.tech') }}">Update Outage Map Towers</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('auth.logout') }}">Log Out</a>
-          </li>
+          <span class="navbar-text">(Tech Logged In)</span>
+          <a class="nav-item nav-link" href="{{ url_for('tech.tech') }}">Update Outage Map Towers</a>
+          <a class="nav-item nav-link" href="{{ url_for('auth.logout') }}">Log Out</a>
         {% else %}
-          <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('auth.login') }}">Tech</a>
-          </li>
+          <a class="nav-item nav-link" href="{{ url_for('auth.login') }}">Tech</a>
         {% endif %}
-      </ul>
+      </div>
     </div>
   </nav>
-  
   <section class="content">
-    <header>
-      {% block header %}{% endblock %}
-    </header>
+    <div class="jumbotron">
+      <div class="container container-lg">
+        <div class="row">
+          <div class="col-lg-12 col-xl-10">
+            <div class="py-4 display-4">
+              {% block header %}{% endblock %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     {% for message in get_flashed_messages() %}
       <div class="flash">{{ message }}</div>
     {% endfor %}
     {% block content %}{% endblock %}
   </section>
 
-  {% block script %}{% endblock %}
+  {% block script %}
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  {% endblock %}
 </body>
 </html>

@@ -1,8 +1,8 @@
 from flask import (
-    Blueprint, flash, g, redirect, render_template, request, url_for
+    Blueprint, flash, g, redirect, render_template, request, url_for, session
 )
 from werkzeug.exceptions import abort
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from flaskr.auth import login_required
 from flaskr.db import get_db
 
@@ -35,7 +35,11 @@ def combine_Updates(posts):
 def status():
     db = get_db()
 
-    week_cut_off = (datetime.now() - timedelta(days=7)).strftime('%Y-%m-%d %H:%M:%S')
+    week_cut_off = "0-0-0 0:0:0"
+    if not session or session.get('logged_in') != True:
+        week_cut_off = (datetime.now(timezone.utc) - timedelta(days=7)).strftime('%Y-%m-%d %H:%M:%S')
+
+    print(week_cut_off)
 
     query = '''
     SELECT 
@@ -54,14 +58,16 @@ def status():
     ON 
         p.id = pu.post_id
     WHERE 
-        p.created >= ? OR pu.updated_at >= ?
+        p.created >= ?
     ORDER BY 
         p.created DESC, 
         pu.updated_at DESC
 '''
     
     
-    posts = db.execute(query, (week_cut_off, week_cut_off)).fetchall()
+    posts = db.execute(query, (week_cut_off,)).fetchall()
+
+    print(posts)
 
     posts_list = combine_Updates(posts)
     print(posts_list)

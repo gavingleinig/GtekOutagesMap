@@ -2,7 +2,6 @@ import os
 
 from flask import Flask
 from flask_wtf.csrf import CSRFProtect
-from flask_limiter import Limiter
 
 
 def create_app(test_config=None):

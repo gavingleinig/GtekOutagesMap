@@ -1,17 +1,25 @@
 {% extends 'base.html' %}
 
 {% block header %}
-  <div class="jumbotron text-center">
+  
     <h1 class="display-4">{% block title %}Network Status{% endblock %}</h1>
     {% if g.user %}
       <a class="btn btn-primary" href="{{ url_for('status.create') }}">Create New Outage Report</a>
     {% endif %}
-  </div>
+
 {% endblock %}
 
 {% block content %}
   {% for post in posts %}
-    <article class="post mb-4">
+    <article class="post mb-4 <div class="media">
+      <a class="d-flex" href="#">
+        <img src="" alt="">
+      </a>
+      <div class="media-body">
+        <h5>Media heading</h5>
+        Media text
+      </div>
+    </div>">
       <div class="card">
         <div class="card-header">
           <h2 class="h5">{{ post['title'] }}</h2>

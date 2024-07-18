@@ -1,10 +1,10 @@
 let map;
 let marker;
+let selectedPlace = null;
 
 document.addEventListener("DOMContentLoaded", async function () {
     await initMap();
     await initAutocomplete();
-    await findIfOutage();
 });
 
 async function initMap() {
@@ -29,58 +29,69 @@ async function initMap() {
 }
 
 async function initAutocomplete() {
-    const defaultBounds = {
-        north: 29.975,
-        south: 26.925,
-        east: -96.125,
-        west: -98.925,
-    };
-    const options = {
-        bounds: defaultBounds,
+    const autocompleteInput = document.getElementById("autocomplete");
+    const autocomplete = new google.maps.places.Autocomplete(autocompleteInput, {
+        bounds: {
+            north: 29.975,
+            south: 26.925,
+            east: -96.125,
+            west: -98.925,
+        },
         componentRestrictions: { country: "us" },
         strictBounds: false,
-    };
-}
+    });
 
-async function findIfOutage() {
-    const autocompleteInput = document.getElementById("autocomplete");
-    const nearestPointElement = document.getElementById("nearest-point");
-    const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
-
-    const autocomplete = new google.maps.places.Autocomplete(autocompleteInput, {});
-
-    google.maps.event.addListener(autocomplete, 'place_changed', async function () {
+    google.maps.event.addListener(autocomplete, 'place_changed', function () {
         const place = autocomplete.getPlace();
-        if (!place || !place.place_id) {
-            nearestPointElement.innerText = "Please select a valid place from the suggestions.";
+        if (!place || !place.geometry) {
+            alert("Please select a place from the search bar.");
             return;
         }
-        
+
+        selectedPlace = place;
         map.setCenter(place.geometry.location);
         map.setZoom(14);
         marker.setPosition(place.geometry.location);
         marker.setVisible(true);
-
-        try {
-            const response = await fetch('/find_outage', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'X-CSRFToken': csrfToken
-                },
-                body: JSON.stringify({ placeId: place.place_id })
-            });
-
-            if (!response.ok) {
-                const errorText = await response.text();
-                throw new Error(`Error: ${response.status} - ${errorText}`);
-            }
-
-            const result = await response.json();
-            nearestPointElement.innerText = result.message;
-        } catch (error) {
-            console.error(error);
-            nearestPointElement.innerText = "Error determining outage status.";
-        }
     });
+}
+
+async function findIfOutage() {
+    const responseMessage = document.getElementById("info-text");
+    const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
+
+    if (!selectedPlace || !selectedPlace.place_id) {
+        responseMessage.innerText = "Please select a place from the search bar.";
+        return;
+    }
+
+    try {
+        const response = await fetch('/find_outage', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRFToken': csrfToken
+            },
+            body: JSON.stringify({ placeId: selectedPlace.place_id })
+        });
+
+        if (!response.ok) {
+            const errorText = await response.text();
+            throw new Error(`Error: ${response.status} - ${errorText}`);
+        }
+
+        const result = await response.json();
+        responseMessage.innerText = result.message;
+
+
+
+    } catch (error) {
+        console.error(error);
+        responseMessage.innerText = "There was an issue determining outage status.";
+    }
+
+    document.getElementById("search-container").style.display = "none";
+    document.getElementById("map").style.display = "none";
+    document.getElementById("search-button").style.display = "none";
+
 }
