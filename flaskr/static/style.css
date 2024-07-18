@@ -1,7 +1,12 @@
-
-.updates {
-  margin-top: 1rem;
+.btn-primary {
+  background-color: #0099d7;
+  border-color: #0099d7;
 }
-.update-content {
-  font-size: 0.9rem;
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+  background-color: #1d7ca3;
+  border-color: #1d7ca3;
+}
+.btn-primary:disabled, .btn-primary.disabled {
+  background-color: #0099d7;
+  border-color: #0099d7;
 }

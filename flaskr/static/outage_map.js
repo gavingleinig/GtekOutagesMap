@@ -58,6 +58,7 @@ async function initAutocomplete() {
 
 async function findIfOutage() {
     const responseMessage = document.getElementById("info-text");
+    const responseTitle = document.getElementById("info-title");
     const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
 
     if (!selectedPlace || !selectedPlace.place_id) {
@@ -82,7 +83,7 @@ async function findIfOutage() {
 
         const result = await response.json();
         responseMessage.innerText = result.message;
-
+        responseTitle.innerText = result.title;
 
 
     } catch (error) {
@@ -90,8 +91,9 @@ async function findIfOutage() {
         responseMessage.innerText = "There was an issue determining outage status.";
     }
 
-    document.getElementById("search-container").style.display = "none";
     document.getElementById("map").style.display = "none";
     document.getElementById("search-button").style.display = "none";
+    document.getElementById("autocomplete").style.display = "none";
+    responseTitle.style.display = "block";
 
 }
