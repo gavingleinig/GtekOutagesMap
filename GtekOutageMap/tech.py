@@ -3,8 +3,8 @@ from flask import (
 )
 import sys
 import os
-from flaskr.auth import login_required
-from flaskr.db import get_db
+from GtekOutageMap.auth import login_required
+from GtekOutageMap.db import get_db
 
 bp = Blueprint('tech', __name__)
 

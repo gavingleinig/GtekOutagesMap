@@ -1,10 +1,8 @@
 from flask import (
     Blueprint, flash, g, redirect, render_template, request, url_for, jsonify
 )
-from werkzeug.exceptions import abort
 import requests
-from flaskr.auth import login_required
-from flaskr.db import get_db
+from GtekOutageMap.db import get_db
 import os
 
 bp = Blueprint('outage_map', __name__)
@@ -13,22 +11,6 @@ bp = Blueprint('outage_map', __name__)
 def map():
     google_maps_api_key = os.getenv('GOOGLE_MAPS_API_KEY')
     return render_template('outage_map.html', google_maps_api_key=google_maps_api_key)
-
-
-#don't think below route is being used anymore -- remove?
-@bp.route('/data')
-def data():
-    db = get_db()
-    towers = db.execute(
-        'SELECT name, longitude, latitude, radius, status FROM towers'
-    ).fetchall()
-
-    towers_list = [
-        dict(name=row['name'], longitude=row['longitude'], latitude=row['latitude'], radius=row['radius'], status=row['status'])
-        for row in towers
-    ]
-    
-    return jsonify({'towers': towers_list})
 
 @bp.route('/find_outage', methods=['POST'])
 def find_outage():
@@ -49,7 +31,6 @@ def find_outage():
     location = geocode_response['results'][0]['geometry']['location']
     address_lat_lng = (location['lat'], location['lng'])
     
-    # Perform outage calculation logic here
     db = get_db()
     towers = db.execute(
         'SELECT name, longitude, latitude, radius, status FROM towers'

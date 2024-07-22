@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     await initAutocomplete();
 });
 
+
 async function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
         zoom: 9,
@@ -30,6 +31,7 @@ async function initMap() {
 
 async function initAutocomplete() {
     const autocompleteInput = document.getElementById("autocomplete");
+    const feedbackElement = document.getElementById("autocompleteFeedback");
     const autocomplete = new google.maps.places.Autocomplete(autocompleteInput, {
         bounds: {
             north: 29.975,
@@ -44,9 +46,13 @@ async function initAutocomplete() {
     google.maps.event.addListener(autocomplete, 'place_changed', function () {
         const place = autocomplete.getPlace();
         if (!place || !place.geometry) {
-            alert("Please select a place from the search bar.");
+            autocompleteInput.classList.add("is-invalid");
+            feedbackElement.style.display = "block";
             return;
         }
+
+        autocompleteInput.classList.remove("is-invalid");
+        feedbackElement.style.display = "none";
 
         selectedPlace = place;
         map.setCenter(place.geometry.location);
@@ -56,13 +62,23 @@ async function initAutocomplete() {
     });
 }
 
+
+
+
 async function findIfOutage() {
     const responseMessage = document.getElementById("info-text");
     const responseTitle = document.getElementById("info-title");
     const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
+    const autocompleteInput = document.getElementById("autocomplete");
+    const feedbackElement = document.getElementById("autocompleteFeedback");
+
+    // Reset validation state
+    autocompleteInput.classList.remove("is-invalid");
+    feedbackElement.style.display = "none";
 
     if (!selectedPlace || !selectedPlace.place_id) {
-        responseMessage.innerText = "Please select a place from the search bar.";
+        autocompleteInput.classList.add("is-invalid");
+        feedbackElement.style.display = "block";
         return;
     }
 
@@ -85,7 +101,6 @@ async function findIfOutage() {
         responseMessage.innerText = result.message;
         responseTitle.innerText = result.title;
 
-
     } catch (error) {
         console.error(error);
         responseMessage.innerText = "There was an issue determining outage status.";
@@ -95,5 +110,4 @@ async function findIfOutage() {
     document.getElementById("search-button").style.display = "none";
     document.getElementById("autocomplete").style.display = "none";
     responseTitle.style.display = "block";
-
 }

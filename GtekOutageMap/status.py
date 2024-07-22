@@ -3,8 +3,8 @@ from flask import (
 )
 from werkzeug.exceptions import abort
 from datetime import datetime, timedelta, timezone
-from flaskr.auth import login_required
-from flaskr.db import get_db
+from GtekOutageMap.auth import login_required
+from GtekOutageMap.db import get_db
 
 bp = Blueprint('status', __name__)
 

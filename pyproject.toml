@@ -1,0 +1,11 @@
+[project]
+name = "GtekOutageMap"
+version = "1.0.0"
+description = "Basic Outage Map and Incident History for Gtek Communications"
+dependencies = [
+    "flask",
+]
+
+[build-system]
+requires = ["flit_core<4"]
+build-backend = "flit_core.buildapi"
