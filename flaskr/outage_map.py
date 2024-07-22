@@ -5,12 +5,14 @@ from werkzeug.exceptions import abort
 import requests
 from flaskr.auth import login_required
 from flaskr.db import get_db
+import os
 
 bp = Blueprint('outage_map', __name__)
 
 @bp.route('/')
 def map():
-    return render_template('outage_map.html')
+    google_maps_api_key = os.getenv('GOOGLE_MAPS_API_KEY')
+    return render_template('outage_map.html', google_maps_api_key=google_maps_api_key)
 
 
 #don't think below route is being used anymore -- remove?
@@ -37,7 +39,8 @@ def find_outage():
     place_id = data['placeId']
     
     # Get latitude and longitude of the placeId
-    geocode_url = f'https://maps.googleapis.com/maps/api/geocode/json?place_id={place_id}&key=AIzaSyCZuq4Bjk6RTomkv9lA9isb8o0nPXBPV6w'
+    google_maps_api_key = os.getenv('GOOGLE_MAPS_API_KEY')
+    geocode_url = f'https://maps.googleapis.com/maps/api/geocode/json?place_id={place_id}&key=' + google_maps_api_key
     geocode_response = requests.get(geocode_url).json()
     
     if geocode_response['status'] != 'OK':
@@ -55,11 +58,11 @@ def find_outage():
     an_offline_tower = None
 
     for tower in towers:
-        if tower['status'] == 'Offline':
+        if tower['status'] == 'offline':
             tower_lat_lng = (tower['latitude'], tower['longitude'])
             distance_to_tower = haversine_distance(address_lat_lng, tower_lat_lng)
-
-            if distance_to_tower <= 16093.4 and distance_to_tower <= tower['radius'] * 1609.34:
+            MAXTOWERDISTANCE = 24140 #15 miles, in meters
+            if distance_to_tower <= MAXTOWERDISTANCE and distance_to_tower <= tower['radius'] * 1609.34:
                 an_offline_tower = {
                     'name': tower['name'],
                     'distance': distance_to_tower

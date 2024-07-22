@@ -37,7 +37,7 @@ def init_db():
             longitude = float(row['x coordinate'])
             latitude = float(row['y coordinate'])
             radius = int(row['description'])
-            status = "active"
+            status = "online"
             
             insert_statements += f'''
             INSERT INTO towers (name, latitude, longitude, radius, status)

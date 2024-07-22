@@ -2,6 +2,7 @@ from flask import (
     Blueprint, flash, redirect, render_template, request, url_for
 )
 import sys
+import os
 from flaskr.auth import login_required
 from flaskr.db import get_db
 
@@ -11,7 +12,7 @@ bp = Blueprint('tech', __name__)
 @login_required
 def tech():
     db = get_db()
-    towers = db.execute('SELECT name, status FROM towers').fetchall()
+    towers = db.execute('SELECT name, status, latitude, longitude, radius FROM towers').fetchall()
 
     if request.method == 'POST':
         action = request.form.get('action')
@@ -19,7 +20,7 @@ def tech():
 
         if action and selected_towers:
             for tower_name in selected_towers:
-                new_status = 'Online' if action == 'online' else 'Offline'
+                new_status = 'online' if action == 'online' else 'offline'
                 try:
                     db.execute(
                         "UPDATE towers SET status = ? WHERE name = ?;",
@@ -29,9 +30,12 @@ def tech():
                 except db.IntegrityError:
                     flash("An error occurred while updating the tower status.")
 
-        towers = db.execute('SELECT name, status FROM towers').fetchall()
+        towers = db.execute('SELECT name, status, latitude, longitude, radius FROM towers').fetchall()
 
-    return render_template('tech.html', towers=towers)
+    towers = [dict(row) for row in towers]
+    
+    google_maps_api_key = os.getenv('GOOGLE_MAPS_API_KEY')
+    return render_template('tech.html', towers=towers, google_maps_api_key=google_maps_api_key)
 
 @bp.route('/tech/edit_towers', methods=('GET', 'POST'))
 @login_required
@@ -71,9 +75,12 @@ def edit_towers():
 
         return jsonify({'success': True, 'message': 'Towers updated successfully!'})
 
-    towers = db.execute('SELECT id, name, latitude, longitude, radius FROM towers').fetchall()
+    towers = db.execute('SELECT id, name, status, latitude, longitude, radius FROM towers').fetchall()
+
+    towers = [dict(row) for row in towers]
     
-    return render_template('edit_towers.html', towers=towers)
+    google_maps_api_key = os.getenv('GOOGLE_MAPS_API_KEY')
+    return render_template('edit_towers.html', towers=towers, google_maps_api_key=google_maps_api_key)
 
 @bp.route('/tech/add_tower', methods=('POST',))
 @login_required
@@ -99,7 +106,7 @@ def add_tower():
     db = get_db()
     db.execute(
         'INSERT INTO towers (name, latitude, longitude, radius, status) VALUES (?, ?, ?, ?, ?)',
-        (name, latitude, longitude, radius, 'Online')
+        (name, latitude, longitude, radius, 'online')
     )
     db.commit()
     

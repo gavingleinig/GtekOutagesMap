@@ -13,7 +13,7 @@ tree = ET.parse('doc.kml')
 root = tree.getroot()
 
 
-with open('towersLocationsRange.csv', 'w', newline='') as csvfile:
+with open('towers.csv', 'w', newline='') as csvfile:
     csvwriter = csv.writer(csvfile)
 
     csvwriter.writerow(['name', 'x coordinate', 'y coordinate', 'description'])

@@ -13,20 +13,24 @@
     <article class="post mb-4">
       <div class="card">
         <div class="card-header">
-          <h2 class="h5 mb-0">{{ post['title'] }}</h2>
-          <div class="status fw-bold">Status: {{ post['status'] }}</div>
-          <div class="about text-muted" data-timestamp="{{ post['created'] }}"></div>
+          <h2 class="h5 mb-0">{{ post.title }}</h2>
+          <div class="d-flex align-items-center">
+            <div class="fw-bold me-2">Status:</div>
+            <div class="{% if post.status == 'investigating' %} fw-bold text-warning {% else %} fw-bold text-success {% endif %} me-2">
+                {{ post.status|capitalize }}
+            </div>
+          </div>
+          <div class="about text-muted" data-timestamp="{{ post.created }}"></div>
         </div>
         <div class="card-body">
-          <p class="card-text">{{ post['body'] }}</p>
+          <p class="card-text">{{ post.body }}</p>
           
-          {% if post['updates'] %}
+          {% if post.updates %}
             <ul class="list-group list-group-flush updates">
-              {% for update in post['updates'] %}
+              {% for update in post.updates %}
                 <li class="list-group-item">
-                  <strong>Update {{  loop.revindex }}:</strong>
-                  <p class="update-content mb-1">{{ update['update_content'] }}</p>
-                  <div class="about text-muted" data-timestamp="{{ update['updated_at'] }}"></div>
+                  <strong>{{ update.updated_at }}</strong>
+                  <p class="update-content mb-1">{{ update.update_content }}</p>
                 </li>
               {% endfor %}
             </ul>
@@ -34,8 +38,8 @@
           
           {% if g.user %}
             <div class="mt-3">
-              <a class="btn btn-secondary btn-sm" href="{{ url_for('status.edit', id=post['id'], do_update='false') }}">Edit</a>
-              <a class="btn btn-secondary btn-sm" href="{{ url_for('status.edit', id=post['id'], do_update='true') }}">Update</a>
+              <a class="btn btn-secondary btn-sm" href="{{ url_for('status.edit', id=post.id, do_update='false') }}">Edit</a>
+              <a class="btn btn-secondary btn-sm" href="{{ url_for('status.edit', id=post.id, do_update='true') }}">Update</a>
             </div>
           {% endif %}
         </div>

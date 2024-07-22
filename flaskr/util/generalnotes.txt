@@ -1,3 +1,10 @@
+Running In Debug Mode:
 .venv\Scripts\activate
 flask --app flaskr run --debug
+
+Creating Database:
+KMZ file was unzipped to a KML (doc.kml)
+xmlToCSV.py runs over file, parses out basic info into a csv (towers.csv)
+Manually edit and clean up Tower Radius's
 flask --app flaskr init-db
+

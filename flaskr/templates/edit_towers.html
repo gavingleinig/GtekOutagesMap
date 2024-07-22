@@ -5,7 +5,16 @@
 {% endblock %}
 
 {% block content %}
+<style>
+  #map {
+    height: 400px; 
+    width: 100%;
+  }
+</style>
   <div class="container mt-5">
+    <div class="container mb-4">
+      <div id="map" class="container g-2" data-bs-towers='{{towers|tojson}}'></div>
+    </div>
     <table class="table table-bordered table-sm" id="towers-table">
       <thead>
         <tr>
@@ -110,4 +119,7 @@
       });
     });
   </script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key={{ google_maps_api_key }}&libraries=places,geometry"></script>
+  <script src="{{ url_for('static', filename='tech.js') }}"></script>
 {% endblock %}

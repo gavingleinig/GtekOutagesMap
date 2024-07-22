@@ -1,4 +1,5 @@
 import os
+from dotenv import load_dotenv
 
 from flask import Flask
 from flask_wtf.csrf import CSRFProtect
@@ -8,6 +9,9 @@ def create_app(test_config=None):
     # create and configure the app
     app = Flask(__name__, instance_relative_config=True)
     csrf = CSRFProtect(app)
+
+    load_dotenv() 
+    google_maps_api_key = os.getenv('GOOGLE_MAPS_API_KEY')
     
     app.config.from_mapping(
         SECRET_KEY='dev',
