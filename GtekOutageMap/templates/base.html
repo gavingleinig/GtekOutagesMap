@@ -19,7 +19,7 @@
 <body>
   <nav class="navbar navbar-expand-md navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="{{ url_for('outage_map.map') }}">
         <img src="{{ url_for('static', filename='logo-GENERAL.svg') }}" width="90" height="30" class="d-inline-block align-top" alt="">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +28,7 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <div class="navbar-nav me-auto mb-2 mb-lg-0">
             <a class="nav-item nav-link" href="{{ url_for('outage_map.map') }}">Outage Map</a>
-            <a class="nav-item nav-link" href="{{ url_for('status.status') }}">Incident History</a>
+            <a class="nav-item nav-link" href="{{ url_for('status.status') }}">Outage Status</a>
             {% if g.user %}
               <a class="nav-item nav-link" href="{{ url_for('tech.tech') }}">Update Map</a>
             {% endif %}

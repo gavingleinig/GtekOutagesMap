@@ -1,8 +1,7 @@
 from flask import (
-    Blueprint, flash, redirect, render_template, request, url_for
+    Blueprint, flash, redirect, render_template, request, url_for, current_app
 )
 import sys
-import os
 from GtekOutageMap.auth import login_required
 from GtekOutageMap.db import get_db
 
@@ -34,7 +33,7 @@ def tech():
 
     towers = [dict(row) for row in towers]
     
-    google_maps_api_key = os.getenv('GOOGLE_MAPS_API_KEY')
+    google_maps_api_key = current_app.config['GOOGLE_MAPS_API_KEY']
     return render_template('tech.html', towers=towers, google_maps_api_key=google_maps_api_key)
 
 @bp.route('/tech/edit_towers', methods=('GET', 'POST'))
@@ -82,7 +81,7 @@ def edit_towers():
 
     towers = [dict(row) for row in towers]
     
-    google_maps_api_key = os.getenv('GOOGLE_MAPS_API_KEY')
+    google_maps_api_key = current_app.config['GOOGLE_MAPS_API_KEY']
     return render_template('edit_towers.html', towers=towers, google_maps_api_key=google_maps_api_key)
 
 @bp.route('/tech/add_tower', methods=('POST',))

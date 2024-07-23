@@ -39,7 +39,7 @@
         <div class="mb-3">
           <label for="update_body_{{ update['update_id'] }}" class="form-label">Update {{  loop.revindex }}:</label>
           <textarea class="form-control" name="update_body_{{ update['update_id'] }}" id="update_body_{{ update['update_id'] }}" rows="2" required>{{ request.form['update_body_' ~ update['update_id']] or update['update_content'] }}</textarea>
-          <button type="button" class="btn btn-danger mt-2 delete-update-btn" data-update-id="{{ update['update_id'] }}">Delete</button>
+          <button type="button" class="btn btn-danger mt-2 delete-update-btn" data-update-id="{{ update['update_id'] }}">Delete Update</button>
         </div>
       {% endfor %}
     {% endif %}

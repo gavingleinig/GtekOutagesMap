@@ -1,5 +1,5 @@
 from flask import (
-    Blueprint, flash, g, redirect, render_template, request, url_for, session
+    Blueprint, flash, g, redirect, render_template, request, url_for, session, current_app
 )
 from werkzeug.exceptions import abort
 from datetime import datetime, timedelta, timezone
@@ -37,7 +37,8 @@ def status():
 
     week_cut_off = "0-0-0 0:0:0"
     if not session or session.get('logged_in') != True:
-        week_cut_off = (datetime.now(timezone.utc) - timedelta(days=7)).strftime('%Y-%m-%d %H:%M:%S')
+        report_ttl_days = int(current_app.config['REPORT_TTL_DAYS'])
+        week_cut_off = (datetime.now(timezone.utc) - timedelta(days=report_ttl_days)).strftime('%Y-%m-%d %H:%M:%S')
 
     print(week_cut_off)
 

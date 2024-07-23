@@ -1,5 +1,5 @@
 from flask import (
-    Blueprint, flash, g, redirect, render_template, request, url_for, jsonify
+    Blueprint, flash, g, redirect, render_template, request, url_for, jsonify, current_app
 )
 import requests
 from GtekOutageMap.db import get_db
@@ -9,7 +9,7 @@ bp = Blueprint('outage_map', __name__)
 
 @bp.route('/')
 def map():
-    google_maps_api_key = os.getenv('GOOGLE_MAPS_API_KEY')
+    google_maps_api_key = current_app.config['GOOGLE_MAPS_API_KEY']
     return render_template('outage_map.html', google_maps_api_key=google_maps_api_key)
 
 @bp.route('/find_outage', methods=['POST'])
@@ -21,7 +21,7 @@ def find_outage():
     place_id = data['placeId']
     
     # Get latitude and longitude of the placeId
-    google_maps_api_key = os.getenv('google_maps_api_key')
+    google_maps_api_key = current_app.config['GOOGLE_MAPS_API_KEY']
     geocode_url = f'https://maps.googleapis.com/maps/api/geocode/json?place_id={place_id}&key=' + google_maps_api_key
     geocode_response = requests.get(geocode_url).json()
     
@@ -51,15 +51,16 @@ def find_outage():
                 break
     
     if an_offline_tower:
+        outageUrl = url_for('status.status')
         title = "Outage Reported"
-        message = f"""You appear to be in an outage. Rest assured, our technicians are working hard to get all services back up and running as soon as possible.
+        message = 'You appear to be in an outage. Rest assured, our technicians are working hard to get all services back up and running as soon as possible. You can check on the status of this outage <a href=' + outageUrl + ' class="link-dark">here</a>.'
         
         
-        <br>DEBUG An Offline Tower is in Radius: {an_offline_tower['name']}, Distance: {(an_offline_tower['distance']/1609.34):.2f} miles.
-        """
+        #<br>DEBUG An Offline Tower is in Radius: {an_offline_tower['name']}, Distance: {(an_offline_tower['distance']/1609.34):.2f} miles.
+        
     else:
         title = "No Outage Reported"
-        message = """We aren't aware of any issues at your location. <br>If you'd like more individualized help, you can <a href="https://www.gtek.biz/help-center/" class="link-dark" >troubleshoot</a> your device or <a href="https://www.gtek.biz/contact-us/"  class="link-dark">contact us</a>."""
+        message = """We are not aware of any issues at your location. <br>If you would like more individualized help, you can <a href="https://www.gtek.biz/help-center/" class="link-dark" >troubleshoot</a> your device or <a href="https://www.gtek.biz/contact-us/"  class="link-dark">contact us</a>."""
 
     return jsonify({"title": title, "message": message, "markerPosition": location})
 

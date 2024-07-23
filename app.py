@@ -6,7 +6,7 @@ app = create_app()
 
 # Define a main function to run the app directly (for development purposes)
 def main():
-    app.run(host="0.0.0.0", port=int(environ.get("PORT", 8080)))
+    app.run(environ.get('FLASK_HOST'), port=environ.get('FLASK_PORT'))
 
 if __name__ == '__main__':
     main()

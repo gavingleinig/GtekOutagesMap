@@ -1,17 +1,13 @@
 import functools
 import json
 import os
+
 from flask import (
     Blueprint, flash, g, redirect, render_template, request, session, url_for
 )
 from werkzeug.security import check_password_hash
 
-
-
-
 bp = Blueprint('auth', __name__)
-
-
 
 # Load credentials from file
 def load_credentials():

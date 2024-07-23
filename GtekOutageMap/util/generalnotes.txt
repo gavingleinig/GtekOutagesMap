@@ -8,3 +8,12 @@ xmlToCSV.py runs over file, parses out basic info into a csv (towers.csv)
 Manually edit and clean up Tower Radius's
 flask --app GtekOutageMap init-db
 
+To deploy to Google Cloud: (in main directory)
+Place keys into Dockerfile
+    (This was emailed to myself 7/23/2024)
+docker build -t gtek-outage-map .
+TEST WITH: docker run -p 8080:8080 gtek-outage-map
+VIEW WITH: http://localhost:8080
+docker tag gtek-outage-map gcr.io/gtekoutage/gtek-outage-map
+docker push gcr.io/gtekoutage/gtek-outage-map
+gcloud run deploy gtek-outage-map --image gcr.io/gtekoutage/gtek-outage-map --platform managed --region us-south1 --allow-unauthenticated

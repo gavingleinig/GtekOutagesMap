@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
 
 {% block header %}
-  {% block title %}Network Status{% endblock %}
+  {% block title %}Outage Status{% endblock %}
   {% if g.user %}
-    <a class="btn btn-primary" href="{{ url_for('status.create') }}">Create New Outage Report</a>
+    <a class="btn btn-primary" href="{{ url_for('status.create') }}">Create New Report</a>
   {% endif %}
 {% endblock %}
 
