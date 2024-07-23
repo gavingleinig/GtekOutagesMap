@@ -8,9 +8,16 @@
 
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <style>
-    #map {
-      height: 400px; 
-      width: 100%;
+        #map {
+        height: 400px; 
+        width: 100%;
+    }
+
+    /* Adjust height on smaller screens */
+    @media (max-width: 768px) {
+        #map {
+            height: 200px; 
+        }
     }
   </style>
     <div id="search-container" class="container mb-4">
@@ -31,7 +38,7 @@
     </div>
     
     <div class="container mb-4">
-      <div id="map" class="container g-2"></div>
+      <div id="map" class="container g-2 p-0 p-sm-1 p-md-2 p-lg-3"></div>
     </div>
     
     <div class="container ">
