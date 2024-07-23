@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
 
-from flask import Flask
+from flask import Flask, jsonify, Response
 from flask_wtf.csrf import CSRFProtect
 
 
@@ -11,7 +11,7 @@ def create_app(test_config=None):
     csrf = CSRFProtect(app)
 
     load_dotenv() 
-    google_maps_api_key = os.getenv('GOOGLE_MAPS_API_KEY')
+    app.config['GOOGLE_MAPS_API_KEY'] = os.getenv('GOOGLE_MAPS_API_KEY', '')
     
     app.config.from_mapping(
         SECRET_KEY='dev',

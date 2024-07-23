@@ -21,7 +21,7 @@ def find_outage():
     place_id = data['placeId']
     
     # Get latitude and longitude of the placeId
-    google_maps_api_key = os.getenv('GOOGLE_MAPS_API_KEY')
+    google_maps_api_key = os.getenv('google_maps_api_key')
     geocode_url = f'https://maps.googleapis.com/maps/api/geocode/json?place_id={place_id}&key=' + google_maps_api_key
     geocode_response = requests.get(geocode_url).json()
     
