@@ -1,7 +1,7 @@
 [project]
 name = "GtekOutageMap"
 version = "1.0.0"
-description = "Basic Outage Map and Incident History for Gtek Communications"
+description = "Basic Outage Map and Incident History using Google Maps API for Gtek Communications"
 dependencies = [
     "flask",
 ]

@@ -35,7 +35,7 @@
         </div>
         <div class="navbar-nav">
           {% if g.user %}
-              <span class="nav-item nav-link">Hello, Tech</span>
+              <span class="nav-item nav-link">Logged in, Tech</span>
               <a class="nav-item nav-link" href="{{ url_for('auth.logout') }}">Log Out</a>
           {% else %}
               <a class=" nav-item nav-link" href="{{ url_for('auth.login') }}">Tech</a>

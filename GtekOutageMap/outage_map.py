@@ -55,11 +55,11 @@ def find_outage():
         message = f"""You appear to be in an outage. Rest assured, our technicians are working hard to get all services back up and running as soon as possible.
         
         
-        DEBUG An Offline Tower is in Radius: {an_offline_tower['name']}, Distance: {(an_offline_tower['distance']/1609.34):.2f} miles.
+        <br>DEBUG An Offline Tower is in Radius: {an_offline_tower['name']}, Distance: {(an_offline_tower['distance']/1609.34):.2f} miles.
         """
     else:
         title = "No Outage Reported"
-        message = "We aren't aware of any issues at your location. Try troubleshooting on your own [insert troubleshooting tips], or contact us at 361-777-1400."
+        message = """We aren't aware of any issues at your location. <br>If you'd like more individualized help, you can <a href="https://www.gtek.biz/help-center/" class="link-dark" >troubleshoot</a> your device or <a href="https://www.gtek.biz/contact-us/"  class="link-dark">contact us</a>."""
 
     return jsonify({"title": title, "message": message, "markerPosition": location})
 

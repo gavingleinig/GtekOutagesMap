@@ -55,14 +55,16 @@ def edit_towers():
 
             # Validate form data
             if not (id and name and latitude and longitude and radius):
-                return jsonify({'success': False, 'message': 'All fields are required.'})
+                flash('An error occurred while updating the tower.', 'error')
+                return redirect(url_for('tech.edit_towers'))
 
             try:
                 latitude = float(latitude)
                 longitude = float(longitude)
                 radius = float(radius)
             except ValueError:
-                return jsonify({'success': False, 'message': 'Latitude, Longitude, and Radius must be valid numbers.'})
+                flash('An error occurred while updating the tower.', 'error')
+                return redirect(url_for('tech.edit_towers'))
 
             try:
                 db.execute(
@@ -71,9 +73,10 @@ def edit_towers():
                 )
                 db.commit()
             except db.IntegrityError:
-                return jsonify({'success': False, 'message': 'An error occurred while updating the tower.'})
+                flash('An error occurred while updating the tower.', 'error')
+                return redirect(url_for('tech.edit_towers'))
 
-        return jsonify({'success': True, 'message': 'Towers updated successfully!'})
+        flash('Successful Update!', 'success')
 
     towers = db.execute('SELECT id, name, status, latitude, longitude, radius FROM towers').fetchall()
 
@@ -119,6 +122,7 @@ def delete(id):
     db = get_db()
     db.execute('DELETE FROM towers WHERE id = ?', (id,))
     db.commit()
+    flash('Tower Removed Successfully', 'success')
     return redirect(url_for('tech.edit_towers'))
 
 def update_tower(tower):

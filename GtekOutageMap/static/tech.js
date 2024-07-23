@@ -29,16 +29,19 @@ async function initMap() {
     var towerData = JSON.parse(document.getElementById("map").getAttribute("data-bs-towers"));
 
     for (var tower of towerData) {
-        var stroke = '#af0500';
-        var fill = '#fd0700';
+        var stroke = '#FFBE00';
+        var fill = '#FFDC00';
+        var fillOpacity = .3
         if (tower.status == 'online') {
             stroke = '#4ef30c';
             fill = '#2ea200';
+            fillOpacity = .3
         }
 
         if (tower.status == 'offline') {
-            stroke = '#FFBE00';
-            fill = '#FFDC00';
+            stroke = '#af0500';
+            fill = '#fd0700';
+            fillOpacity = .7
         }
 
         var contentString = '<div id="content">' +
@@ -67,10 +70,10 @@ async function initMap() {
 
             var cityCircle = new google.maps.Circle({
                 strokeColor: stroke,
-                strokeOpacity: 0.8,
+                strokeOpacity: 0.5,
                 strokeWeight: 2,
                 fillColor: fill,
-                fillOpacity: 0.35,
+                fillOpacity: fillOpacity,
                 map: map,
                 center: { lat: tower.latitude, lng: tower.longitude },
                 radius: tower.radius * 1609.34

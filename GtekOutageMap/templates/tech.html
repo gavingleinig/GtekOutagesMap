@@ -57,6 +57,7 @@
 
 
 {% block script %}
+{{ super() }}
 <script>
     function selectDeselectAll(checked) {
         var checkboxes = document.getElementsByName('tower_status[]');

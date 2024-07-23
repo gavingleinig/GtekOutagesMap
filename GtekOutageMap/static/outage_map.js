@@ -98,7 +98,7 @@ async function findIfOutage() {
         }
 
         const result = await response.json();
-        responseMessage.innerText = result.message;
+        responseMessage.innerHTML = result.message;
         responseTitle.innerText = result.title;
 
     } catch (error) {
