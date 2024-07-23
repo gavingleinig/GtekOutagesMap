@@ -26,6 +26,7 @@ def find_outage():
     geocode_response = requests.get(geocode_url).json()
     
     if geocode_response['status'] != 'OK':
+        print("Error, had invalid place_id: ", place_id,"reponse:",geocode_response)
         return jsonify({"message": "Error geocoding placeId."}), 400
     
     location = geocode_response['results'][0]['geometry']['location']

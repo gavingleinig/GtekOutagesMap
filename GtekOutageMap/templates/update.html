@@ -5,7 +5,7 @@
   <hr>
   <form action="{{ url_for('status.delete', id=post['id']) }}" method="post">
     <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
-    <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure?');">Delete Status Report</button>
+    <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this report?');">Delete Status Report</button>
   </form>
 {% endblock %}
 
@@ -15,7 +15,7 @@
     <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
     
     <div class="mb-3">
-      <label for="title" class="form-label">Title</label>
+      <h4 for="title" class="form-label">Title</h4>
       <input type="text" class="form-control" name="title" id="title" value="{{ request.form['title'] or post['title'] }}" required>
     </div>
 
@@ -34,31 +34,38 @@
 
     {% if post['updates'] %}
       <hr>
-      <h2>Updates</h2>
+      <h4>Updates</h4>
       {% for update in post['updates'] %}
         <div class="mb-3">
           <label for="update_body_{{ update['update_id'] }}" class="form-label">Update {{  loop.revindex }}:</label>
-          <textarea class="form-control" name="update_body_{{ update['update_id'] }}" id="update_body_{{ update['update_id'] }}" rows="2" required>{{ request.form['update_body_' ~ update['update_id']] or update['update_content'] }}</textarea>
-          <button type="button" class="btn btn-danger mt-2 delete-update-btn" data-update-id="{{ update['update_id'] }}">Delete Update</button>
-        </div>
+          <div class="row">
+            <div class="col-8">
+              <textarea class="form-control" name="update_body_{{ update['update_id'] }}" id="update_body_{{ update['update_id'] }}" rows="2" required>{{ request.form['update_body_' ~ update['update_id']] or update['update_content'] }}</textarea>
+            </div>
+            <div class="col">
+              <button type="button" class="btn btn-danger mt-2 delete-update-btn" data-update-id="{{ update['update_id'] }}">Delete Update</button>
+            </div>
+            </div>
+          </div>
       {% endfor %}
     {% endif %}
 
     {% if do_update %}
       <hr>
-      <h2>Add New Update</h2>
+      <h4>Add New Update</h4>
       <div class="mb-3">
         <label for="new_update_body" class="form-label">Update Text</label>
         <textarea class="form-control" name="new_update_body" id="new_update_body" rows="2">{{ request.form['new_update_body'] }}</textarea>
       </div>
     {% endif %}
 
-    <button type="submit" class="btn btn-primary">Save</button>
+    {% if not do_update %}
+    <a class="btn btn-secondary" href="{{ url_for('status.edit', id=post['id'], do_update='true') }}">Add Update</a>
+    {% endif %}
+    <button type="submit" class="btn btn-primary">Save Changes</button>
   </form>
 
-  {% if not do_update %}
-    <a class="btn btn-secondary mb-4" href="{{ url_for('status.edit', id=post['id'], do_update='true') }}">Add Update</a>
-  {% endif %}
+  
 
   <hr>
 </div>

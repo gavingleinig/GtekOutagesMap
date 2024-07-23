@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
 async function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 9,
+        zoom: 8,
         center: { lat: 28.090881958, lng: -97.68847870 }, // Center of Gtek Service Area
         fullscreenControl: false,
         disableDefaultUI: true,

@@ -29,7 +29,7 @@
       </div>
       <div class="row">
         <div class="col-sm-10 col-md-8 col-lg-6">
-            <input id="autocomplete" type="text" class="form-control form-control-lg" placeholder="Enter address" aria-describedby="autocompleteFeedback">
+            <input id="autocomplete" type="text" autocomplete="off" class="form-control form-control-lg" placeholder="Enter address" aria-describedby="autocompleteFeedback">
             <div id="autocompleteFeedback" class="invalid-feedback">
               Please select a place from the search bar.
             </div>
@@ -41,12 +41,10 @@
       <div id="map" class="container g-2 p-0 p-sm-1 p-md-2 p-lg-3"></div>
     </div>
     
-    <div class="container ">
+    <div class="container">
       <div class="row">
-        <div class="col mb-5">
-          <div class="d-flex">
-            <button id="search-button" onclick="findIfOutage()" class="btn btn-primary mt-2 btn-lg">Find Outages</button>
-          </div>
+        <div class="col-12 col-md-3 mb-5">
+          <button id="search-button" onclick="findIfOutage()" class="btn btn-primary mt-2 btn-lg w-100">Check Now</button>
         </div>
       </div>    
     </div>
